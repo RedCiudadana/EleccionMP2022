@@ -1,0 +1,19 @@
+{
+  "links": [
+    {
+      "external": false,
+      "url": "https://stupefied-golick-7e0f06.netlify.app/politics/",
+      "name": "Politics"
+    },
+    {
+      "external": false,
+      "url": "https://stupefied-golick-7e0f06.netlify.app/business/",
+      "name": "Business"
+    },
+    {
+      "external": false,
+      "name": "Data",
+      "url": "https://stupefied-golick-7e0f06.netlify.app/data/"
+    }
+  ]
+}

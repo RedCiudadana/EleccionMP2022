@@ -1,0 +1,218 @@
+---
+pagination:
+  data: collections.posts
+  size: 5
+  alias: list
+  reverse: true
+permalink: '<% if (pagination.pageNumber > 0) { %><%= `page${pagination.pageNumber + 1}/index.html` %><% } else { %>index.html<% } %>'
+eleventyComputed:
+  title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
+---
+
+<div class="max-w-screen-lg mx-auto mb-6">
+  <div class="grid grid-cols-9 gap-4">
+    <!-- highlight -->
+    <div class="col-span-full md:col-span-4 px-5">
+      <ul>
+        <% collections.postsHighlighted.forEach((post, idx)=> { %>
+          <li class="mb-3 flex flex-wrap justify-between border-b pb-4">
+            <% if (idx == 0) { %>
+              <img src="<%= post.data.image %>" alt="<%= post.data.title %>" class="w-full">
+              <div class="w-full">
+                <div>
+                  <% if (post.data.tags) { %>
+                    <% post.data.tags.forEach((tag)=> { %>
+                      <!-- Don't show hidden tag -->
+                      <% if (tag !=='posts' ) { %>
+                        <a href="/<%= tag.toLowerCase() %>" class="font-mono text-sm tracking-wider uppercase text-gray-600">
+                          <%= tag %>
+                        </a>
+                      <% } %>
+                    <% }) %>
+                  <% } %>
+                </div>
+                <a class="font-bold text-gray-900 leading-tight inline-block mb-4" href="<%= post.url %>">
+                  <%= post.data.title %>
+                </a>
+                <p class="text-sm">
+                  <%= post.data.description %>
+                </p>
+              </div>
+            <%} else { %>
+              <div class="flex-1 flex-shrink">
+                <div>
+                  <% if (post.data.tags) { %>
+                    <% post.data.tags.forEach((tag)=> { %>
+                      <!-- Don't show hidden tag -->
+                      <% if (tag !=='posts' ) { %>
+                        <a href="/<%= tag.toLowerCase() %>" class="font-mono text-sm tracking-wider uppercase text-gray-600">
+                          <%= tag %>
+                        </a>
+                      <% } %>
+                    <% }) %>
+                  <% } %>
+                </div>
+                <a class="font-bold text-gray-900 leading-tight inline-block mb-4 pr-4 text-lg" href="<%= post.url %>">
+                  <%= post.data.title %>
+                </a>
+              </div>
+              <div class="w-48 h-28 overflow-hidden flex-shirnk bg-red-100">
+                <img src="<%= post.data.image %>" style="display: inline;" class="h-full w-auto">
+              </div>
+            <% } %>
+          </li>
+          <% }) %>
+      </ul>
+    </div>
+    <!-- latest -->
+    <div class="col-span-full md:col-span-2 border-l border-gray-400 px-5 mt-6 md:mt-0">
+      <h2
+        class="mb-4 text-base font-mono tracking-wider uppercase text-gray-600 border-b border-gray-400 leading-none pb-2">
+        THE LATEST</h2>
+      <ul>
+        <% list.forEach((post)=> { %>
+          <li class="mb-3 block justify-between border-b border-gray-400 pb-4">
+            <div class="text-xs text-left font-mono uppercase text-gray-600 tracking-wider">
+              <%= this.dateFns.format(new Date(post.data.date), 'LLLL d' ) %>
+            </div>
+            <a class="text-base font-bold text-gray-900 leading-tight inline-block" href="<%= post.url %>">
+              <%= post.data.title %>
+            </a>
+          </li>
+          <% }) %>
+      </ul>
+  
+      <div class="text-sm flex justify-center">
+        <% if (pagination.previous) { %>
+          <div>
+            <a class="text-gray-900 text-xs border border-gray-900 p-2 text-center hover:bg-gray-800 hover:border-gray-800 hover:no-underline hover:text-gray-50"
+              href="<%= pagination.previous.replace(/index.html$/, "") %>">
+              <!-- ←  -->Newer Posts
+            </a>
+          </div>
+          <% } %>
+            <% if (pagination.next) { %>
+              <div class="text-right mt-2">
+                <a class="text-gray-900 text-xs border border-gray-900 p-2 text-center hover:bg-gray-800 hover:border-gray-800 hover:no-underline hover:text-gray-50"
+                  href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts
+                  <!--  → -->
+                </a>
+              </div>
+              <% } %>
+      </div>
+    </div>
+    <!-- interactives -->
+    <div class="col-span-full md:col-span-3 border-l border-gray-400 px-5 mt-6 md:mt-0">
+      <h2
+        class="mb-4 text-base font-mono tracking-wider uppercase text-gray-600  border-b border-gray-400 leading-none pb-2">
+        Interactives</h2>
+      <ul>
+        <li class="mb-3 block justify-between border-b border-gray-400">
+          <iframe id="pym-fivethirtyeight_embed_373" title="Biden Approval Rating"
+            src="https://projects.fivethirtyeight.com/biden-approval-rating/promo.html" width="300" height="215"
+            scrolling="no"></iframe>
+        </li>
+        <li class="mb-3 block justify-between border-b border-gray-400 pb-6">
+          <iframe id="pym-fivethirtyeight_embed_381" title="Redistricting Tracker"
+            src="https://projects.fivethirtyeight.com/redistricting-2022-maps/promo.html" width="300" height="305"
+            scrolling="no"></iframe>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="bg-gradient-to-r from-red-300 to-gray-400 w-screen mb-6">
+  <div class="max-w-screen-lg mx-auto">
+    <div class="grid grid-cols-9 gap-4 ">
+      <!-- video -->
+      <div class="col-span-full md:col-span-9 mt-6 md:mt-0">
+        <div class="h-auto md:h-96 w-full flex p-12">
+          <div class="m-auto max-w-lg flex flex-wrap">
+            <div class="w-full md:w-1/3 text-center">
+              <button name="play" class="bg-black h-20 w-20 rounded-full mb-6 text-center">
+                <img src="/assets/images/symbol-play.svg" alt="Play" class="h-8 w-8 ml-7">
+              </button>
+            </div>
+            <div class="w-full md:w-2/3 text-left mb-6">
+              <h2 class="mb-1 text-sm font-mono tracking-wider uppercase text-gray-600 leading-none">DESIGN</h2>
+              <h1 class="mb-4 font-bold text-gray-900 text-3xl leading-tight">Product Development Process: A Step-By-Step
+                Approach</h1>
+              <span class="text-xs text-gray-800">By UxPin</span>
+            </div>
+            <div class="w-2/3 ml-auto flex">
+              <a class="text-gray-900 text-xs border border-gray-900 p-2 text-center hover:bg-gray-800 hover:border-gray-800 hover:no-underline hover:text-gray-50 mr-2"
+                href="#">
+                Subscribe on YouTube
+              </a>
+              <a class="text-gray-900 text-xs border border-gray-900 p-2 text-center hover:bg-gray-800 hover:border-gray-800 hover:no-underline hover:text-gray-50"
+                href="#">
+                All videos
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-gradient-to-r from-red-300 to-gray-400 w-screen mb-6">
+  <div class="max-w-screen-lg mx-auto">
+    <div class="grid grid-cols-9 gap-4 ">
+      <!-- video -->
+      <div class="col-span-full md:col-span-9 mt-6 md:mt-0">
+        <div class="h-auto md:h-96 w-full flex p-12">
+          <div class="m-auto max-w-lg flex flex-wrap">
+            <div class="w-full md:w-2/3 text-left mb-6">
+              <h2 class="mb-1 text-sm font-mono tracking-wider uppercase text-gray-600 leading-none">DESIGN</h2>
+              <h1 class="mb-4 font-bold text-gray-900 text-3xl leading-tight">Product Development Process: A
+                Step-By-Step
+                Approach</h1>
+              <span class="text-xs text-gray-800">By UxPin</span>
+            </div>
+            <div class="w-full md:w-1/3 text-center">
+              <button name="play" class="bg-black h-20 w-20 rounded-full mb-6 text-center">
+                <img src="/assets/images/symbol-play.svg" alt="Play" class="h-8 w-8 ml-7 my-auto">
+              </button>
+            </div>
+            <div class="w-2/3 ml-auto flex">
+              <a class="text-gray-900 text-xs border border-gray-900 p-2 text-center hover:bg-gray-800 hover:border-gray-800 hover:no-underline hover:text-gray-50 mr-2"
+                href="#">
+                Subscribe on YouTube
+              </a>
+              <a class="text-gray-900 text-xs border border-gray-900 p-2 text-center hover:bg-gray-800 hover:border-gray-800 hover:no-underline hover:text-gray-50"
+                href="#">
+                All videos
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-red-200 text-gray-900 w-screen">
+  <div class="max-w-screen-lg mx-auto">
+    <div class="grid grid-cols-9 gap-4 ">
+      <!-- suscribe email -->
+      <div class="col-span-full md:col-span-9 mt-6 md:mt-0">
+        <div class="h-auto md:h-64 w-full flex flex-wrap p-12">
+          <div class="w-full md:w-1/2 flex">
+            <h1 class="text-3xl font-bold my-auto">FiveThirtyEight</h1>
+          </div>
+          <div class="w-full md:w-1/2 flex">
+            <div class="block my-auto">
+              <h2 class="text-lg font-bold mb-2">Want the latest politics news? Get it in your inbox</h2>
+              <form class="block md:flex mb-2">
+                <input type="email" name="email" placeholder="Email address" class="px-2 h-9 leading-none">
+                <button
+                  class="text-gray-900 text-xs border border-gray-900 p-2 text-center hover:bg-gray-800 hover:border-gray-800 hover:no-underline hover:text-gray-50 mt-4 md:mt-0 md:ml-4 h-9 leading-none min-w-min">Sign
+                  me up</button>
+              </form>
+              <a href="#" class="text-base text-gray-900">See all newsletters</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

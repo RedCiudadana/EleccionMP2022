@@ -1,0 +1,55 @@
+---
+layout: layouts/base.ejs
+---
+
+<div class="grid grid-cols-4">
+  <div class="col-span-full md:col-span-3 px-5">
+    <article>
+      <header>
+        <h1 class="text-left font-bold text-3xl text-gray-800">
+          <%= title %>
+        </h1>
+        <div class="text-left text-sm mb-8">
+          <% this.dateFns.format(new Date(date), 'LLLL d, yyyy' ) %>
+        </div>
+        <div class="text-left text-sm text-gray-600">
+          Tagged in: 
+          <% if (locals.tags) { %>
+            <% tags.forEach((tag)=> { %>
+              <!-- Don't show hidden tag -->
+              <% if (tag !=='posts' ) { %>
+                <a href="/<%= tag.toLowerCase() %>" class="text-sm underline font-semibold text-gray-900 uppercase ml-2">
+                  <%= tag %>
+                </a>
+              <% } %>
+            <% }) %>
+          <% } %>
+        </div>
+      </header>
+    
+      <section class="content font-serif">
+        <%- content %>
+      </section>
+    </article>
+  </div>
+  <div class="col-span-full md:col-span-1 border-l border-gray-400 px-5 mt-6 md:mt-0">
+    <h2
+      class="mb-4 text-base font-mono tracking-wider uppercase text-gray-600  border-b border-gray-400 leading-none pb-2">
+      RECOMMENDED</h2>
+    <ul>
+      <% if (locals.tags) { %>
+        <% tags.forEach((tag)=> { %>
+          <% if (tag !=='posts' ) { %>
+            <% collections[tag].forEach((post)=> { %>
+              <li class="mb-3 block justify-between border-b border-gray-400">
+                <a class="text-base font-bold text-gray-900 leading-tight inline-block mb-3" href="<%= post.url %>">
+                  <%= post.data.title %>
+                </a>
+              </li>
+            <% }) %>
+          <% } %>
+        <% }) %>
+      <% } %>
+    </ul>
+  </div>
+</div>

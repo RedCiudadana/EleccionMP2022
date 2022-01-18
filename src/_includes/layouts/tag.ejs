@@ -1,0 +1,29 @@
+---
+layout: layouts/base.ejs
+---
+
+<article>
+  <header>
+    <h1 class="text-center font-bold text-3xl text-gray-800">
+      <%= title %>
+    </h1>
+  </header>
+
+  <section class="content mb-8">
+    <%- content %>
+  </section>
+
+  <section>
+    <% collections[title].forEach((post)=> { %>
+      <li class="mb-3 flex justify-between">
+        <a href="<%= post.url %>">
+          <%= post.data.title %>
+        </a>
+
+        <div>
+          <%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy' ) %>
+        </div>
+      </li>
+    <% }) %>
+  </section>
+</article>
