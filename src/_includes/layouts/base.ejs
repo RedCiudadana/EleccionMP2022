@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/css/brands.min.css">
     <title><%= title %></title>
     <meta
       name="description"
@@ -63,33 +65,36 @@
   </head>
 
   <body class="antialiased w-full text-gray-700">
-    <div class="max-w-screen-lg mx-auto">
-      <div class="px-5">
-        <div class="pt-16 pb-4">
-          <h1 class="font-bold text-3xl text-gray-900 border-b-2 border-black pb-2 font-serif"><%= site.title %></h1>
-          <!-- <div class="text-xl"><%= site.description %></div> -->
-        </div>
-        <nav>
-          <ul class="flex flex-wrap text-base">
-            <li class="mr-8">
-              <a class="text-gray-700 border-none hover:no-underline hover:text-gray-800" href="/"
-                >Home</a
-              >
-            </li>
-            <% menu.links.forEach((menu)=> { %>
-              <li class="mr-8">
-                <a
-                  class="text-gray-700 border-none hover:no-underline hover:text-gray-800"
-                  href="<%= menu.url %>"
-                  <% if (menu.external) { %>target="_blank"<% } %>
-                >
-                  <%= menu.name %>
-                </a>
-              </li>
-            <% }) %>
-          </ul>
-        </nav>
+    <div class="flex max-w-screen-xl mx-auto">
+      <div class="bg-yellow-400 px-12 flex">
+        <h1 class="text-5xl my-auto self-center leading-none mx-auto font-bold text-white">EleccionMP</h1>
       </div>
+      <nav class="ml-auto py-8">
+        <a href="https://www.facebook.com/Redciudadanagt/" target="_blank" class="mr-12 font-medium hover:text-blue-300 text-blue-900 no-underline hover:no-underline">
+          Proceso
+        </a>
+        <a href="#" class="mr-12 font-medium hover:text-blue-300 text-blue-900 no-underline hover:no-underline">
+          Comisionados
+        </a>
+        <a href="#" class="mr-12 font-medium hover:text-blue-300 text-blue-900 no-underline hover:no-underline">
+          Candidaturas
+        </a>
+        <a href="#" class="mr-12 font-medium hover:text-blue-300 text-blue-900 no-underline hover:no-underline">
+          Eventos
+        </a>
+        <a href="https://www.facebook.com/Redciudadanagt/" target="_blank" class="mr-4 text-gray-500">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCQwc62j7beStZYFzwPxBEQg" target="_blank" class="mr-4 text-gray-500">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/redxguate/" target="_blank" class="mr-4 text-gray-500">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/RedxGuate" target="_blank" class="text-gray-500">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </nav>
     </div>
     <main>
       <div class="text-xl py-5">

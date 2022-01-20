@@ -56,6 +56,7 @@ collections:
     editor:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Title" }
       - { name: "link", label: "Enlace de iframe interactivo" }
       - { name: "date", label: "Date", widget: "datetime" }
   - name: "add" # Used in routes, e.g., /admin/collections/add
