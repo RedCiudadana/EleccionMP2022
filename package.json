@@ -5,7 +5,7 @@
   "scripts": {
     "build-dev:webpack": "webpack",
     "watch:webpack": "webpack --watch",
-    "watch:eleventy": "cross-env ELEVENTY_ENV=development eleventy --serve",
+    "watch:eleventy": "cross-env ELEVENTY_ENV=development eleventy --serve --port=8081",
     "dev": "npm-run-all clean build-dev:webpack --parallel watch:*",
     "build:webpack": "cross-env NODE_ENV=production webpack --mode production",
     "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",

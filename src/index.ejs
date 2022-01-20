@@ -35,15 +35,19 @@ title: EleccionCC
 <div class="w-full bg-gray-100">
   <div class="max-w-screen-lg mx-auto">
     <div class="grid grid-cols-9 gap-4 justify-center text-center py-16">
-      <div class="col-span-4 text-left">
-        <h3 class="uppercase font-bold text-base tracking-wider">podcast</h3>
-        <h2 class="font-bold text-4xl">Proceso de Elección</h2>
-      </div>
-      <div class="col-span-5">
-        <iframe src="https://open.spotify.com/embed/episode/5Ft8XMWj69jyY0gkym75hM?utm_source=generator" width="100%"
-          height="232" frameBorder="0" allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-      </div>
+      <% if (collections['podcastsHighlighted']) { %>
+          <% collections['podcastsHighlighted'].slice(0,1).forEach((podcast)=> { %>
+            <div class="col-span-4 text-left">
+              <h3 class="uppercase font-bold text-base tracking-wider">podcast</h3>
+              <h2 class="font-bold text-4xl"><%= podcast.data.title %></h2>
+            </div>
+            <div class="col-span-5">
+              <iframe src="<%= podcast.data.link %>" width="100%"
+                height="232" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+          <% }) %>
+        <% } %>
     </div>
   </div>
 </div>
@@ -52,27 +56,17 @@ title: EleccionCC
     <div class="col-span-6">
       <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Eventos</h4>
       <div>
-        <div class="flex border-b-2 pb-4 mb-4">
-          <img src="/assets/images/WEB_MP-15.png" alt="Evento" class="h-36">
-          <div class="pl-8 my-auto">
-            <h5 class="font-bold text-lg">Lorem ipsum dolor sit</h5>
-            <span class="text-sm">Red Ciudadana | Enero 30, 2022</span>
-          </div>
-        </div>
-        <div class="flex border-b-2 pb-4 mb-4">
-          <img src="/assets/images/WEB_MP-15.png" alt="Evento" class="h-36">
-          <div class="pl-8 my-auto">
-            <h5 class="font-bold text-lg">Lorem ipsum dolor sit</h5>
-            <span class="text-sm">Red Ciudadana | Enero 30, 2022</span>
-          </div>
-        </div>
-        <div class="flex border-b-2 pb-4 mb-4">
-          <img src="/assets/images/WEB_MP-15.png" alt="Evento" class="h-36">
-          <div class="pl-8 my-auto">
-            <h5 class="font-bold text-lg">Lorem ipsum dolor sit</h5>
-            <span class="text-sm">Red Ciudadana | Enero 30, 2022</span>
-          </div>
-        </div>
+        <% if (collections['Evento']) { %>
+          <% collections['Evento'].forEach((post)=> { %>
+            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
+              <img src="<%= post.data.image %>" alt="Evento" class="w-36">
+              <div class="pl-8 my-auto">
+                <h5 class="font-bold text-lg"><%= post.data.title %></h5>
+                <span class="text-sm"><%= post.data.description %></span>
+              </div>
+            </a>
+          <% }) %>
+        <% } %>
       </div>
     </div>
     <div class="col-span-3">
@@ -80,25 +74,16 @@ title: EleccionCC
         <h4 class="uppercase font-bold text-base tracking-wider my-auto">Videos</h4>
       </div>
       <div>
-        <div class="block mb-4">
-          <iframe src="https://www.youtube.com/embed/blvczodhvd0" title="YouTube video player"
-            class="mb-4"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetuer adpiscing elit, sed diam nomun</p>
-        </div>
-        <div class="block mb-4">
-          <iframe src="https://www.youtube.com/embed/blvczodhvd0" title="YouTube video player" class="mb-4" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetuer adpiscing elit, sed diam nomun</p>
-        </div>
-        <div class="block mb-4">
-          <iframe src="https://www.youtube.com/embed/blvczodhvd0" title="YouTube video player" class="mb-4" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetuer adpiscing elit, sed diam nomun</p>
-        </div>
+        <% if (collections['Video']) { %>
+          <% collections['Video'].forEach((video)=> { %>
+            <a href="<%= video.url %>" class="block mb-4 text-current">
+              <iframe src="<%= video.data.link %>" title="YouTube video player" class="mb-4" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+              <p class="text-sm mb-4"><%= video.data.description %></p>
+            </a>
+          <% }) %>
+        <% } %>
       </div>
     </div>
   </div>
@@ -124,34 +109,34 @@ title: EleccionCC
     <div class="col-span-6">
       <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Blog</h4>
       <div>
-        <div class="flex border-b-2 pb-4 mb-4">
-          <img src="/assets/images/WEB_MP-15.png" alt="Evento" class="h-36">
-          <div class="pl-8 my-auto">
-            <h5 class="font-bold text-lg">Lorem ipsum dolor sit</h5>
-            <span class="text-sm">Red Ciudadana | Enero 30, 2022</span>
-          </div>
-        </div>
-        <div class="flex border-b-2 pb-4 mb-4">
-          <img src="/assets/images/WEB_MP-15.png" alt="Evento" class="h-36">
-          <div class="pl-8 my-auto">
-            <h5 class="font-bold text-lg">Lorem ipsum dolor sit</h5>
-            <span class="text-sm">Red Ciudadana | Enero 30, 2022</span>
-          </div>
-        </div>
-        <div class="flex border-b-2 pb-4 mb-4">
-          <img src="/assets/images/WEB_MP-15.png" alt="Evento" class="h-36">
-          <div class="pl-8 my-auto">
-            <h5 class="font-bold text-lg">Lorem ipsum dolor sit</h5>
-            <span class="text-sm">Red Ciudadana | Enero 30, 2022</span>
-          </div>
-        </div>
+        <% if (collections['Blog']) { %>
+          <% collections['Blog'].forEach((post)=> { %>
+            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
+              <img src="<%= post.data.image %>" alt="Evento" class="w-36">
+              <div class="pl-8 my-auto">
+                <h5 class="font-bold text-lg"><%= post.data.title %></h5>
+                <span class="text-sm"><%= post.data.description %></span>
+              </div>
+            </a>
+          <% }) %>
+        <% } %>
       </div>
     </div>
-    <div class="col-span-3 px-16">
+    <div class="col-span-3">
       <div class="h-20 flex">
         <h4 class="uppercase font-bold text-base tracking-wider my-auto">Podcast</h4>
       </div>
       <div>
+        <% if (collections['podcasts']) { %>
+          <% collections['podcasts'].forEach((podcast)=> { %>
+            <div class="block mb-4">
+              <iframe src="<%= podcast.data.link %>" width="100%"
+                height="152" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              <p class="text-sm mb-4"><%= podcast.data.description %></p>
+            </div>
+          <% }) %>
+        <% } %>
         <div class="block mb-4">
           <img src="/assets/images/WEB_MP-15.png" alt="Evento" class="w-auto mb-4">
           <p class="text-sm mb-4">Lorem ipsum dolor sit amet, consectetuer adpiscing elit, sed diam nomun</p>

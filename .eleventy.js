@@ -48,6 +48,12 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection('podcastsHighlighted', (collectionApi) => {
+    return collectionApi.getFilteredByTag('podcasts').filter((item) => {
+      return item.data.highlight == true;
+    });
+  });
+
   return {
     dir: { input: 'src', output: '_site', data: '_data' },
   };
