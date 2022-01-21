@@ -1,8 +1,8 @@
 {
-  "site_name": "Five Thirty Eight",
-  "title": "FiveThirtyEight Guatemala",
-  "description": "Politics + Business + Development + Data",
-  "url": "https://example.com",
+  "site_name": "EleccionMP",
+  "title": "EleccionMP",
+  "description": "Conoce todo sobre el proceso de elección del Fiscal General del Ministerio Público de Guatemala",
+  "url": "https://eleccionmp.redciudadana.org/",
   "locale": "es",
-  "author": "Five Thirty Eight"
+  "author": "Asociación Civil Red Ciudadana"
 }
