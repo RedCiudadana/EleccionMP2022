@@ -40,6 +40,7 @@ module.exports = {
         yellow: {
           500: '#ffc80e',
         },
+        footer: '#1a2736',
       },
     },
   },

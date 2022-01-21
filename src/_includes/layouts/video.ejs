@@ -29,8 +29,20 @@ layout: layouts/base.ejs
           </div>
         </header>
   
-        <section class="content text-justify">
-          <%- content %>
+        <section class="content text-center">
+          <div class="w-full">
+            <iframe
+              src="<%= link %>"
+              title="YouTube video player"
+              width="560"
+              height="315"
+              class="mb-4 mx-auto my-8"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <%- description %>
         </section>
       </article>
     </div>

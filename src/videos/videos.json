@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/video.ejs",
+  "permalink": "v/{{ page.fileSlug }}/index.html",
+  "tags": "videos"
+}
