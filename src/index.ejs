@@ -2,9 +2,9 @@
 title: EleccionCC
 ---
 <div class="w-full bg-blue-300 py-16 relative">
-  <div class="max-w-screen-lg mx-auto">
+  <div class="max-w-screen-lg px-4 md:px-0 mx-auto">
     <div class="grid grid-cols-9">
-      <div class="col-span-6">
+      <div class="col-span-9 md:col-span-6 text-center md:text-left">
         <h2 class="text-4xl font-bold text-white">
           Conoce todo sobre el proceso de elección del Fiscal General del Ministerio Público de Guatemala
         </h2>
@@ -13,31 +13,31 @@ title: EleccionCC
       <div class="col-span-3"></div>
     </div>
   </div>
-  <img src="/assets/images/MP_04.png" alt="Lupa viendo Guatemala" class="h-56 absolute right-0 top-16">
+  <img src="/assets/images/MP_04.png" alt="Lupa viendo Guatemala" class="h-56 md:absolute right-0 top-16 ml-auto mt-4">
 </div>
-<div class="max-w-screen-lg mx-auto mb-6">
+<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
   <div class="grid grid-cols-9 gap-4 justify-center text-center py-6">
-    <div class="col-start-3 col-span-6 mb-8">
+    <div class="col-span-9 md:col-start-3 md:col-span-6 mb-8">
       <h2 class="text-3xl font-bold">¿En qué etapa va el proceso de elección del Ministerio Público?</h2>
     </div>
-    <div class="col-span-3 bg-blue-300 p-6 rounded-2xl">
-      <img src="/assets/images/iconos/01.png" alt="Personas" class="mx-auto h-28">
+    <div class="col-span-9 md:col-span-3 bg-blue-300 p-6 rounded-2xl">
+      <img src="/assets/images/iconos/01.png" alt="Personas" class="mx-auto h-28 w-28">
       <h2 class="text-3xl font-bold">Paso 1</h2>
       <h3 class="text-lg font-bold text-white pb-4">Del 22 al 30 enero</h3>
       <p class="text-lg font-normal">
         Elección de Secretarios Titular y Suplente de la Comisión y aprobación de las distintas herramientas
       </p>
     </div>
-    <div class="col-span-3 bg-gray-100 p-6 rounded-2xl">
-      <img src="/assets/images/iconos/02.png" alt="Personas" class="mx-auto h-28">
+    <div class="col-span-9 md:col-span-3 bg-gray-100 p-6 rounded-2xl">
+      <img src="/assets/images/iconos/02.png" alt="Personas" class="mx-auto h-28 w-28">
       <h2 class="text-3xl font-bold">Paso 2</h2>
       <h3 class="text-lg font-bold text-blue-300 pb-4">5 de febrero</h3>
       <p class="text-lg font-normal">
         Primera publicación de la convocatoria
       </p>
     </div>
-    <div class="col-span-3 bg-gray-100 p-6 rounded-2xl">
-      <img src="/assets/images/iconos/03.png" alt="Personas" class="mx-auto h-28">
+    <div class="col-span-9 md:col-span-3 bg-gray-100 p-6 rounded-2xl">
+      <img src="/assets/images/iconos/03.png" alt="Personas" class="mx-auto h-28 w-28">
       <h2 class="text-3xl font-bold">Paso 3</h2>
       <h3 class="text-lg font-bold text-blue-300 pb-4">Del 06 al 16 enero</h3>
       <p class="text-lg font-normal">
@@ -47,18 +47,18 @@ title: EleccionCC
   </div>
 </div>
 <div class="w-full bg-gray-100">
-  <div class="max-w-screen-lg mx-auto">
+  <div class="max-w-screen-lg px-4 md:px-0 mx-auto">
     <div class="grid grid-cols-9 gap-4 justify-center text-center py-16">
       <% if (collections['podcastsHighlighted']) { %>
           <% collections['podcastsHighlighted'].slice(0,1).forEach((podcast)=> { %>
-            <div class="col-span-4 text-left">
+            <div class="col-span-9 md:col-span-4 text-left">
               <h3 class="uppercase font-bold text-base tracking-wider">podcast</h3>
               <h2 class="font-bold text-4xl"><%= podcast.data.title %></h2>
               <p class="font-regular text-normal">
                 <%= podcast.data.description %>
               </p>
             </div>
-            <div class="col-span-5">
+            <div class="col-span-9 md:col-span-5">
               <iframe src="<%= podcast.data.link %>" width="100%"
                 height="232" frameBorder="0" allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -68,9 +68,9 @@ title: EleccionCC
     </div>
   </div>
 </div>
-<div class="max-w-screen-lg mx-auto mb-6">
+<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
   <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
-    <div class="col-span-6">
+    <div class="col-span-9 md:col-span-6">
       <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Eventos</h4>
       <div>
         <% if (collections['Evento']) { %>
@@ -86,7 +86,7 @@ title: EleccionCC
         <% } %>
       </div>
     </div>
-    <div class="col-span-3">
+    <div class="col-span-9 md:col-span-3">
       <div class="h-20 flex">
         <h4 class="uppercase font-bold text-base tracking-wider my-auto">Videos</h4>
       </div>
@@ -106,15 +106,15 @@ title: EleccionCC
   </div>
 </div>
 <div class="w-full bg-blue-900">
-  <div class="max-w-screen-lg mx-auto">
+  <div class="max-w-screen-lg px-4 md:px-0 mx-auto">
     <div class="grid grid-cols-9 gap-4 justify-center text-left py-16 text-white">
-      <div class="col-span-5">
+      <div class="col-span-9 md:col-span-5">
         <h2 class="font-bold text-4xl ">Suscríbete</h2>
         <p class="text-lg">
           Lorem ipsum dolor sit amet, consectetuer adpiscing elit, sed diam nomum
         </p>
       </div>
-      <div class="col-span-4">
+      <div class="col-span-9 md:col-span-4">
         <!-- Begin Mailchimp Signup Form -->
         <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7_dtp.css" rel="stylesheet" type="text/css">
         <style type="text/css">
@@ -151,9 +151,9 @@ title: EleccionCC
     </div>
   </div>
 </div>
-<div class="max-w-screen-lg mx-auto mb-6">
+<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
   <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
-    <div class="col-span-6">
+    <div class="col-span-9 md:col-span-6">
       <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Blog</h4>
       <div>
         <% if (collections['Blog']) { %>
@@ -169,7 +169,7 @@ title: EleccionCC
         <% } %>
       </div>
     </div>
-    <div class="col-span-3">
+    <div class="col-span-9 md:col-span-3">
       <div class="h-20 flex">
         <h4 class="uppercase font-bold text-base tracking-wider my-auto">Podcast</h4>
       </div>
