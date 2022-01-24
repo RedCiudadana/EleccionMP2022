@@ -1,0 +1,56 @@
+---
+layout: layouts/base.ejs
+pagination:
+  data: collections.Evento
+  size: 2
+  alias: list
+  reverse: true
+permalink: 'eventos/<% if (pagination.pageNumber > 0) { %><%= `page${pagination.pageNumber + 1}/index.html` %><% } else { %>index.html<% } %>'
+eleventyComputed:
+  title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
+---
+<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
+  <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
+    <div class="col-span-9">
+      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Blog</h4>
+      <div>
+        <% if (list) { %>
+          <% list.forEach((post)=> { %>
+            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
+              <img src="<%= post.data.image %>" alt="Evento" class="w-36">
+              <div class="pl-8 my-auto">
+                <h5 class="font-bold text-lg">
+                  <%= post.data.title %>
+                </h5>
+                <span class="text-sm font-semibold">
+                  <%= this.dateFns.format(new Date(post.data.date), 'MM/dd/yyyy' , { locale: this.es }) %>
+                </span>
+                <p class="text-base">
+                  <%= post.data.description %>
+                </p>
+              </div>
+            </a>
+          <% }) %>
+        <% } %>
+      </div>
+    </div>
+    <div class="col-span-9 text-sm flex justify-end">
+      <% if (pagination.previous) { %>
+      <div>
+        <a class="text-gray-900 text-xs border border-gray-900 p-2 text-center hover:bg-gray-800 hover:border-gray-800 hover:no-underline hover:text-gray-50"
+          href="<%= pagination.previous.replace(/index.html$/, "") %>">
+          ←  Nuevos eventos
+        </a>
+      </div>
+      <% } %>
+      <% if (pagination.next) { %>
+        <div class="text-right mt-2">
+          <a class="text-gray-900 text-xs border border-gray-900 p-2 text-center hover:bg-gray-800 hover:border-gray-800 hover:no-underline hover:text-gray-50"
+            href="<%= pagination.next.replace(/index.html$/, "") %>">
+            Eventos anteriores →
+          </a>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</div>

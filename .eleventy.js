@@ -1,5 +1,7 @@
 const htmlmin = require('html-minifier');
 const dateFns = require('date-fns');
+const { es } = require('date-fns/locale');
+const { esLocale } = require('date-fns/locale/es');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
@@ -21,6 +23,8 @@ module.exports = function (eleventyConfig) {
     rmWhitespace: true,
     context: {
       dateFns,
+      esLocale,
+      es,
     },
   });
 

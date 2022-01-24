@@ -90,7 +90,7 @@ title: EleccionCC
       <div class="h-20 flex">
         <h4 class="uppercase font-bold text-base tracking-wider my-auto">Videos</h4>
       </div>
-      <div>
+      <div class="border-b-2 border-yellow-500 w-full">
         <% if (collections['Video']) { %>
           <% collections['Video'].forEach((video)=> { %>
             <a href="<%= video.url %>" class="block mb-4 text-current">
@@ -101,6 +101,11 @@ title: EleccionCC
             </a>
           <% }) %>
         <% } %>
+      </div>
+      <div class="text-right">
+        <a class="text-current text-sm font-semibold" href="#">
+          Más videos
+        </a>
       </div>
     </div>
   </div>
@@ -131,7 +136,7 @@ title: EleccionCC
             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
             novalidate>
             <div id="mc_embed_signup_scroll">
-        
+              <h5 class="mb-4">Correo electrónico</h5>
               <input type="email" value="" name="EMAIL" class="email h-12 mb-4 text-black" id="mce-EMAIL" placeholder="Correo electrónico" required>
               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
@@ -173,7 +178,7 @@ title: EleccionCC
       <div class="h-20 flex">
         <h4 class="uppercase font-bold text-base tracking-wider my-auto">Podcast</h4>
       </div>
-      <div>
+      <div class="border-b-2 border-yellow-500 w-full">
         <% if (collections['podcasts']) { %>
           <% collections['podcasts'].forEach((podcast)=> { %>
             <div class="block mb-4">
@@ -183,6 +188,11 @@ title: EleccionCC
             </div>
           <% }) %>
         <% } %>
+      </div>
+      <div class="text-right">
+        <a class="text-current text-sm font-semibold" href="#">
+          Más podcast
+        </a>
       </div>
     </div>
   </div>
