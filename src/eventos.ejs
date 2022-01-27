@@ -5,31 +5,36 @@ pagination:
   size: 2
   alias: list
   reverse: true
-permalink: 'eventos/<% if (pagination.pageNumber > 0) { %><%= `page${pagination.pageNumber + 1}/index.html` %><% } else { %>index.html<% } %>'
+permalink: 'eventos/<% if (pagination.pageNumber > 0) { %><%= `page/${pagination.pageNumber + 1}/index.html` %><% } else { %>index.html<% } %>'
 eleventyComputed:
   title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
 ---
-<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
+<div class="max-w-screen-xl px-4 md:px-0 mx-auto mb-6">
   <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
     <div class="col-span-9">
-      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Blog</h4>
+      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Eventos</h4>
       <div>
         <% if (list) { %>
           <% list.forEach((post)=> { %>
-            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
-              <img src="<%= post.data.image %>" alt="Evento" class="w-36">
-              <div class="pl-8 my-auto">
-                <h5 class="font-bold text-lg">
+            <div class="flex border-b-2 mb-4 text-current bg-gray-100 py-12 relative">
+              <h6 class="text-2xl font-semibold mb-auto text-left w-1/4 pl-16">
+                <span class="font-normal text-base"><i class="fas fa-calendar-day mr-2 text-green-500"></i> Event Date</span>
+                <br>
+                <%= this.dateFns.format(new Date(post.data.date), 'MM/dd/yyyy' , { locale: this.es }) %>
+              </h6>
+              <img src="<%= post.data.image %>" alt="Evento" class="w-48 h-48">
+              <div class="pl-16 mb-auto">
+                <a href="<%= post.url %>" class="font-bold text-current text-3xl">
                   <%= post.data.title %>
-                </h5>
-                <span class="text-sm font-semibold">
-                  <%= this.dateFns.format(new Date(post.data.date), 'MM/dd/yyyy' , { locale: this.es }) %>
-                </span>
-                <p class="text-base">
+                </a>
+                <p class="text-base mt-2">
                   <%= post.data.description %>
                 </p>
               </div>
-            </a>
+              <a href="<%= post.url %>" class="bg-yellow-500 bottom-0 right-0 absolute w-28 h-12 flex hover:no-underline">
+                <i class="fas fa-long-arrow-alt-right text-white text-4xl m-auto"></i>
+              </a>
+            </div>
           <% }) %>
         <% } %>
       </div>
