@@ -37,7 +37,7 @@ eleventyComputed:
     <div class="col-span-9 text-sm flex justify-end">
       <% if (pagination.previous) { %>
       <div>
-        <a class="text-gray-900 text-xs border border-gray-900 p-2 text-center hover:bg-gray-800 hover:border-gray-800 hover:no-underline hover:text-gray-50"
+        <a class="text-white bg-yellow-500 font-bold p-2 text-center hover:bg-yellow-600 hover:no-underline"
           href="<%= pagination.previous.replace(/index.html$/, "") %>">
           ←  Nuevos blog
         </a>
@@ -45,7 +45,7 @@ eleventyComputed:
       <% } %>
       <% if (pagination.next) { %>
         <div class="text-right mt-2">
-          <a class="text-gray-900 text-xs border border-gray-900 p-2 text-center hover:bg-gray-800 hover:border-gray-800 hover:no-underline hover:text-gray-50"
+          <a class="text-white bg-yellow-500 font-bold p-2 text-center hover:bg-yellow-600 hover:no-underline"
             href="<%= pagination.next.replace(/index.html$/, "") %>">
             Blog anteriores →
           </a>

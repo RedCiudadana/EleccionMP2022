@@ -74,23 +74,27 @@ title: EleccionCC
 <div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
   <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
     <div class="col-span-9 md:col-span-6">
-      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Eventos</h4>
+      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Blog</h4>
       <div>
-        <% if (collections['Evento']) { %>
-          <% collections['Evento'].slice(0,3).forEach((post)=> { %>
+        <% if (collections['Blog']) { %>
+          <% collections['Blog'].slice(0,3).forEach((post)=> { %>
             <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
               <img src="<%= post.data.image %>" alt="Evento" class="w-36">
               <div class="pl-8 my-auto">
-                <h5 class="font-bold text-lg"><%= post.data.title %></h5>
-                <span class="text-sm"><%= post.data.description %></span>
+                <h5 class="font-bold text-lg">
+                  <%= post.data.title %>
+                </h5>
+                <span class="text-sm">
+                  <%= post.data.description %>
+                </span>
               </div>
             </a>
-          <% }) %>
-        <% } %>
+            <% }) %>
+              <% } %>
       </div>
       <div class="text-right">
-        <a class="text-current text-sm font-semibold" href="/eventos">
-          Más eventos
+        <a class="text-current text-sm font-semibold" href="/blog">
+          Más blogs
         </a>
       </div>
     </div>
@@ -167,31 +171,35 @@ title: EleccionCC
 <div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
   <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
     <div class="col-span-9 md:col-span-6">
-      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Blog</h4>
+      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Eventos</h4>
       <div>
-        <% if (collections['Blog']) { %>
-          <% collections['Blog'].slice(0,3).forEach((post)=> { %>
+        <% if (collections['Evento']) { %>
+          <% collections['Evento'].slice(0,3).forEach((post)=> { %>
             <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
               <img src="<%= post.data.image %>" alt="Evento" class="w-36">
               <div class="pl-8 my-auto">
-                <h5 class="font-bold text-lg"><%= post.data.title %></h5>
-                <span class="text-sm"><%= post.data.description %></span>
+                <h5 class="font-bold text-lg">
+                  <%= post.data.title %>
+                </h5>
+                <span class="text-sm">
+                  <%= post.data.description %>
+                </span>
               </div>
             </a>
-          <% }) %>
-        <% } %>
+            <% }) %>
+              <% } %>
       </div>
       <div class="text-right">
-        <a class="text-current text-sm font-semibold" href="/blog">
-          Más blogs
+        <a class="text-current text-sm font-semibold" href="/eventos">
+          Más eventos
         </a>
       </div>
     </div>
     <div class="col-span-9 md:col-span-3">
-      <div class="h-20 flex">
+      <div class="h-20 flex border-b-2 border-yellow-500">
         <h4 class="uppercase font-bold text-base tracking-wider my-auto">Podcast</h4>
       </div>
-      <div class="border-b-2 border-yellow-500 w-full">
+      <div class="w-full">
         <% if (collections['podcasts']) { %>
           <% collections['podcasts'].forEach((podcast)=> { %>
             <div class="block mb-4">
