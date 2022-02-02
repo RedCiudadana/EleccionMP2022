@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.ejs
 ---
-<div class="max-w-screen-lg mx-auto mb-6">
+<div class="max-w-screen-lg mx-auto mb-6 mt-6">
   <div class="grid grid-cols-4">
     <div class="col-span-full">
       <article>
@@ -12,7 +12,7 @@ layout: layouts/base.ejs
           <div class="text-center text-sm mb-8">
             <% this.dateFns.format(new Date(date), 'LLLL d, yyyy' ) %>
           </div>
-          <div class="text-center text-sm text-gray-600">
+          <div class="text-center text-sm text-gray-600 mb-6">
             Categoria:
             <% if (locals.tags) { %>
               <% tags.forEach((tag)=> { %>
@@ -27,6 +27,10 @@ layout: layouts/base.ejs
             <% } %>
           </div>
         </header>
+  
+        <section class="content text-justify" style="margin:auto">
+          <img src="<%- image %>">
+        </section>
   
         <section class="content text-justify">
           <%- content %>
