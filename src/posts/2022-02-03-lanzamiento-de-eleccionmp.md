@@ -4,7 +4,7 @@ image: https://wizardly-varahamihira-02e2ad.netlify.app/assets/images/posts/web_
 description: Lanzamiento de EleccionMP
 tags:
   - Evento
-date: 2022-02-03T14:58:20.652Z
+date: 2022-02-07T14:58:20.652Z
 highlight: true
 ---
 Se realizara el lanzamiento del proyecto EleccionMP
