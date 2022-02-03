@@ -1,0 +1,80 @@
+---
+layout: layouts/base.ejs
+pagination:
+  data: collections.Video
+  size: 5
+  alias: list
+  reverse: true
+permalink: 'video/<% if (pagination.pageNumber > 0) { %><%= `page/${pagination.pageNumber + 1}/index.html` %><% } else { %>index.html<% } %>'
+eleventyComputed:
+  title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
+---
+<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
+  <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
+    <div class="col-span-9">
+        <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Videos</h4>
+
+        <div class="event-area pt-80 pb-130">
+            <div class="container">
+
+                <% if (list) { %>
+                    <% list.forEach((video)=> { %>
+                        <div class="event-bg event-bg-03 pos-rel mb-30">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-3">
+                                    <div class="event-content mb-20">
+                                        <span><i class="far fa-calendar-alt verdeo"></i> Fecha del evento:</span>
+                                        <h3><%= this.dateFns.format(new Date(video.data.date), 'dd/MM/yyyy' , { locale: this.es }) %></h3>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4">
+                                    <div class="event-img mb-20">
+                                        <iframe src="<%= video.data.link %>" title="YouTube video player" class="mb-4" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-xl-5 col-lg-5">
+                                    <div class="event-wrapper mb-20 ">
+                                        <div class="event-text">
+                                            <span><i class="far fa-map-marked-alt verdeo"></i> <%= video.data.title %></span>
+                                            <h3><a href=" https://redciudadana.org/"><%= video.data.description %></a></h3>
+                                        </div>
+                                        <div class="event-meta">
+                                            <span><i class="far fa-user-circle"></i> <%= video.url %></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="evt-button">
+                                <a href="<%= video.url %>"><i class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                    <% }) %>
+                <% } %>
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-span-9 text-sm flex justify-end">
+      <% if (pagination.previous) { %>
+      <div>
+        <a class="text-white bg-yellow-500 font-bold p-2 text-center hover:bg-yellow-600 hover:no-underline"
+          href="<%= pagination.previous.replace(/index.html$/, "") %>">
+          ←  Nuevos eventos
+        </a>
+      </div>
+      <% } %>
+      <% if (pagination.next) { %>
+        <div class="text-right mt-2">
+          <a class="text-white bg-yellow-500 font-bold p-2 text-center hover:bg-yellow-600 hover:no-underline"
+            href="<%= pagination.next.replace(/index.html$/, "") %>">
+            Eventos anteriores →
+          </a>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</div>
