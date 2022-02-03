@@ -53,7 +53,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection('podcastsHighlighted', (collectionApi) => {
-    return collectionApi.getFilteredByTag('podcasts').filter((item) => {
+    return collectionApi.getFilteredByTag('Podcast').filter((item) => {
       return item.data.highlight == true;
     });
   });
