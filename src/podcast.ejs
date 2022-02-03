@@ -1,0 +1,60 @@
+---
+layout: layouts/base.ejs
+pagination:
+  data: collections.Podcast
+  size: 5
+  alias: list
+  reverse: true
+permalink: 'podcast/<% if (pagination.pageNumber > 0) { %><%= `page/${pagination.pageNumber + 1}/index.html` %><% } else { %>index.html<% } %>'
+eleventyComputed:
+  title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
+---
+<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
+  <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
+    <div class="col-span-9">
+        <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Videos</h4>
+
+        <% if (list) { %>
+            <% list.forEach((podcast)=> { %>
+              <div class="flex border-b-2 mb-4 text-current bg-gray-100 py-12 relative">
+                <h6 class="text-2xl font-semibold mb-auto text-left w-1/4 pl-16">
+                  <span class="font-normal text-base"><i class="fas fa-calendar-day mr-2 text-green-500"></i> Fecha del Podcast</span>
+                  <br>
+                  <%= this.dateFns.format(new Date(podcast.data.date), 'dd/MM/yyyy' , { locale: this.es }) %>
+                </h6>
+                <iframe src="<%= podcast.data.link %>" title="YouTube video player" class="mb-4" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="pl-16 mb-auto">
+                  <p class="font-bold text-current text-3xl">
+                    <%= podcast.data.title %>
+                  </p>
+                  <p class="text-base mt-2">
+                    <%= podcast.data.description %>
+                  </p>
+                </div>
+              </div>
+            <% }) %>
+        <% } %>
+
+    </div>
+    <div class="col-span-9 text-sm flex justify-end">
+      <% if (pagination.previous) { %>
+      <div>
+        <a class="text-white bg-yellow-500 font-bold p-2 text-center hover:bg-yellow-600 hover:no-underline"
+          href="<%= pagination.previous.replace(/index.html$/, "") %>">
+          ←  Nuevos eventos
+        </a>
+      </div>
+      <% } %>
+      <% if (pagination.next) { %>
+        <div class="text-right mt-2">
+          <a class="text-white bg-yellow-500 font-bold p-2 text-center hover:bg-yellow-600 hover:no-underline"
+            href="<%= pagination.next.replace(/index.html$/, "") %>">
+            Eventos anteriores →
+          </a>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</div>
