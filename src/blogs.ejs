@@ -2,7 +2,7 @@
 layout: layouts/base.ejs
 pagination:
   data: collections.Blog
-  size: 2
+  size: 5
   alias: list
   reverse: true
 permalink: 'blog/<% if (pagination.pageNumber > 0) { %><%= `page/${pagination.pageNumber + 1}/index.html` %><% } else { %>index.html<% } %>'
@@ -23,7 +23,7 @@ eleventyComputed:
                   <%= post.data.title %>
                 </h5>
                 <span class="text-sm font-semibold">
-                  <%= this.dateFns.format(new Date(post.data.date), 'MM/dd/yyyy' , { locale: this.es }) %>
+                  <%= this.dateFns.format(new Date(post.data.date), 'MM-dd-yyyy' , { locale: this.es }) %>
                 </span>
                 <p class="text-base">
                   <%= post.data.description %>

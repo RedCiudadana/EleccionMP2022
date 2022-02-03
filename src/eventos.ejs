@@ -2,7 +2,7 @@
 layout: layouts/base.ejs
 pagination:
   data: collections.Evento
-  size: 2
+  size: 5
   alias: list
   reverse: true
 permalink: 'eventos/<% if (pagination.pageNumber > 0) { %><%= `page/${pagination.pageNumber + 1}/index.html` %><% } else { %>index.html<% } %>'
@@ -18,9 +18,9 @@ eleventyComputed:
           <% list.forEach((post)=> { %>
             <div class="flex border-b-2 mb-4 text-current bg-gray-100 py-12 relative">
               <h6 class="text-2xl font-semibold mb-auto text-left w-1/4 pl-16">
-                <span class="font-normal text-base"><i class="fas fa-calendar-day mr-2 text-green-500"></i> Event Date</span>
+                <span class="font-normal text-base"><i class="fas fa-calendar-day mr-2 text-green-500"></i> Fecha del Evento</span>
                 <br>
-                <%= this.dateFns.format(new Date(post.data.date), 'MM/dd/yyyy' , { locale: this.es }) %>
+                <%= this.dateFns.format(new Date(post.data.date), 'MM-dd-yyyy' , { locale: this.es }) %>
               </h6>
               <img src="<%= post.data.image %>" alt="Evento" class="w-48 h-48">
               <div class="pl-16 mb-auto">
