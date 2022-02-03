@@ -20,7 +20,7 @@ eleventyComputed:
               <h6 class="text-2xl font-semibold mb-auto text-left w-1/4 pl-16">
                 <span class="font-normal text-base"><i class="fas fa-calendar-day mr-2 text-green-500"></i> Fecha del Evento</span>
                 <br>
-                <%= this.dateFns.format(new Date(post.data.date), 'MM-dd-yyyy' , { locale: this.es }) %>
+                <%= this.dateFns.format(new Date(post.data.date), 'dd/MM/yyyy' , { locale: this.es }) %>
               </h6>
               <img src="<%= post.data.image %>" alt="Evento" class="w-48 h-48">
               <div class="pl-16 mb-auto">
