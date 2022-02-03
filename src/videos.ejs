@@ -14,49 +14,32 @@ eleventyComputed:
     <div class="col-span-9">
         <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Videos</h4>
 
-        <div class="event-area pt-80 pb-130">
-            <div class="container">
+        <% if (list) { %>
+            <% list.forEach((video)=> { %>
+              <div class="flex border-b-2 mb-4 text-current bg-gray-100 py-12 relative">
+                <h6 class="text-2xl font-semibold mb-auto text-left w-1/4 pl-16">
+                  <span class="font-normal text-base"><i class="fas fa-calendar-day mr-2 text-green-500"></i> Fecha del Video</span>
+                  <br>
+                  <%= this.dateFns.format(new Date(video.data.date), 'dd/MM/yyyy' , { locale: this.es }) %>
+                </h6>
+                <iframe src="<%= video.data.link %>" title="YouTube video player" class="mb-4" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="pl-16 mb-auto">
+                  <a href="<%= video.url %>" class="font-bold text-current text-3xl">
+                    <%= video.data.title %>
+                  </a>
+                  <p class="text-base mt-2">
+                    <%= video.data.description %>
+                  </p>
+                </div>
+                <a href="<%= video.url %>" class="bg-yellow-500 bottom-0 right-0 absolute w-28 h-12 flex hover:no-underline">
+                  <i class="fas fa-long-arrow-alt-right text-white text-4xl m-auto"></i>
+                </a>
+              </div>
+            <% }) %>
+        <% } %>
 
-                <% if (list) { %>
-                    <% list.forEach((video)=> { %>
-                        <div class="event-bg event-bg-03 pos-rel mb-30">
-                            <div class="row">
-                                <div class="col-xl-3 col-lg-3">
-                                    <div class="event-content mb-20">
-                                        <span><i class="far fa-calendar-alt verdeo"></i> Fecha del evento:</span>
-                                        <h3><%= this.dateFns.format(new Date(video.data.date), 'dd/MM/yyyy' , { locale: this.es }) %></h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-lg-4">
-                                    <div class="event-img mb-20">
-                                        <iframe src="<%= video.data.link %>" title="YouTube video player" class="mb-4" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                                <div class="col-xl-5 col-lg-5">
-                                    <div class="event-wrapper mb-20 ">
-                                        <div class="event-text">
-                                            <span><i class="far fa-map-marked-alt verdeo"></i> <%= video.data.title %></span>
-                                            <h3><a href=" https://redciudadana.org/"><%= video.data.description %></a></h3>
-                                        </div>
-                                        <div class="event-meta">
-                                            <span><i class="far fa-user-circle"></i> <%= video.url %></span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="evt-button">
-                                <a href="<%= video.url %>"><i class="far fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-
-                    <% }) %>
-                <% } %>
-                
-            </div>
-        </div>
     </div>
     <div class="col-span-9 text-sm flex justify-end">
       <% if (pagination.previous) { %>
