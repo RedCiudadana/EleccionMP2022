@@ -1,6 +1,5 @@
 ---
-title: "Sesión 2: Comisión de Postulación Fiscal General y Jefe del Ministerio
-  Público"
+title: "Sesión 2: Comisión de Postulación"
 image: /assets/images/posts/screenshot_2.jpg
 description: Comisión de Postulación Fiscal General y Jefe del Ministerio Público
 tags:
