@@ -16,14 +16,14 @@ eleventyComputed:
       <div>
         <% if (list) { %>
           <% list.forEach((post)=> { %>
-            <div class="flex border-b-2 mb-4 text-current bg-gray-100 py-12 relative">
-              <h6 class="text-2xl font-semibold mb-auto text-left w-1/4 pl-16">
+            <div class="flex border-b-2 mb-4 text-current bg-gray-100 py-12 relative responsive">
+              <h6 class="text-2xl font-semibold mb-auto text-left px-4 pl-16">
                 <span class="font-normal text-base"><i class="fas fa-calendar-day mr-2 text-green-500"></i> Fecha del Evento</span>
                 <br>
                 <%= this.dateFns.format(new Date(post.data.date), 'dd/MM/yyyy' , { locale: this.es }) %>
               </h6>
-              <img src="<%= post.data.image %>" alt="Evento" class="w-48 h-48">
-              <div class="pl-16 mb-auto">
+              <img src="<%= post.data.image %>" alt="Evento" class="w-48 h-48 m-auto">
+              <div class="px-4 mb-auto">
                 <a href="<%= post.url %>" class="font-bold text-current text-3xl">
                   <%= post.data.title %>
                 </a>
@@ -37,6 +37,23 @@ eleventyComputed:
             </div>
           <% }) %>
         <% } %>
+
+        <style>
+
+          @media (max-width: 820px) {
+              .col-span-9{
+                  margin:0 1.5rem
+              }
+          }
+  
+          @media (max-width: 480px){
+              .responsive{
+                  display:block!important;
+              }
+          }
+  
+        </style>
+
       </div>
     </div>
     <div class="col-span-9 text-sm flex justify-end">
