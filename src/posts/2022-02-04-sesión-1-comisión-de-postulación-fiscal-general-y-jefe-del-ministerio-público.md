@@ -1,6 +1,5 @@
 ---
-title: "Sesión 1: Comisión de Postulación Fiscal General y Jefe del Ministerio
-  Público"
+title: "Sesión 1: Comisión de Postulación"
 image: https://scontent.fgua1-3.fna.fbcdn.net/v/t39.30808-6/272795314_5014677295219306_468932014483045374_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=yS0ZE0S-pHgAX_mdoXk&tn=zfSNfT0jS3xOuXw4&_nc_ht=scontent.fgua1-3.fna&oh=00_AT9E8w09DbHHCoIkbMoSBcXufnGcqbOx30PYPgVGgUN2dg&oe=62008C7C
 description: Comisión de Postulación Fiscal General y Jefe del Ministerio Público
 tags:
