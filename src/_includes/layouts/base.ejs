@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="/assets/css/brands.min.css">
     <link rel="stylesheet" href="/assets/css/solid.min.css">
-    <title><%= title %></title>
+    <title><%= title %> - Red Ciudadana</title>
     <meta
       name="description"
       content="<%= (!!locals.description) ? description : site.description %>"
@@ -63,6 +63,15 @@
       }
     </script>
     <% } %>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= site.google_analytics_id %>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', '<%= site.google_analytics_id %>');
+    </script>
   </head>
 
   <body class="antialiased w-full text-gray-700">

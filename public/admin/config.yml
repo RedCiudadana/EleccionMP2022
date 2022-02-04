@@ -85,6 +85,7 @@ collections:
           - { name: "url", label: "Site url" }
           - { name: "locale", label: "Language" }
           - { name: "author", label: "Author" }
+          - { name: "google_analytics_id", label: "Google Analytics Id" }
   - name: "tag"
     label: "Tag"
     folder: "src/tags"
