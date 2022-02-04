@@ -1,6 +1,7 @@
 ---
 title: EleccionMP
-description: El podcast donde analizaremos el proceso de EleccionMP
+description: "El podcast donde analizaremos las sesiones de la comisión de
+  postulación, herramientas, candidaturas y más del proceso de #EleccionMP"
 link: https://open.spotify.com/embed-podcast/episode/44UUNkovLQ5Pydgc8tLuPO
 tags:
   - Podcast
