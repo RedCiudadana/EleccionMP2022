@@ -84,7 +84,7 @@ title: EleccionMP
 <div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
   <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
     <div class="col-span-9 md:col-span-6">
-      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Blog</h4>
+      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Lo último</h4>
       <div>
         <% if (collections['Blog']) { %>
           <% collections['Blog'].slice(0,5).forEach((post)=> { %>
@@ -99,8 +99,8 @@ title: EleccionMP
                 </span>
               </div>
             </a>
-            <% }) %>
-              <% } %>
+          <% }) %>
+        <% } %>
       </div>
       <div class="text-right">
         <a class="text-current text-sm font-semibold" href="/blog">
