@@ -88,7 +88,7 @@ title: EleccionMP
       <div>
         <% if (collections['Blog']) { %>
           <% collections['Blog'].slice(0,5).forEach((post)=> { %>
-            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
+            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current responsive">
               <img src="<%= post.data.image %>" alt="Evento" class="w-36">
               <div class="pl-8 my-auto">
                 <h5 class="font-bold text-lg">
@@ -101,6 +101,24 @@ title: EleccionMP
             </a>
           <% }) %>
         <% } %>
+        <style>
+  
+          @media (max-width: 480px){
+              .responsive{
+                display:block!important;
+                margin: 1.5rem 0;
+              }
+
+              .responsive img{
+                margin:1.5rem auto;
+              }
+
+              .rifra{
+                margin:1.5rem auto;
+              } 
+          }
+  
+        </style>
       </div>
       <div class="text-right">
         <a class="text-current text-sm font-semibold" href="/blog">
@@ -116,7 +134,7 @@ title: EleccionMP
         <% if (collections['Video']) { %>
           <% collections['Video'].slice(0,4).forEach((video)=> { %>
             <a href="<%= video.url %>" class="block mb-4 text-current">
-              <iframe src="<%= video.data.link %>" title="YouTube video player" class="mb-4" frameborder="0"
+              <iframe src="<%= video.data.link %>" title="YouTube video player" class="mb-4 rifra" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
               <p class="text-sm mb-4"><%= video.data.description %></p>
@@ -185,7 +203,7 @@ title: EleccionMP
       <div>
         <% if (collections['Evento']) { %>
           <% collections['Evento'].slice(0,5).forEach((post)=> { %>
-            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
+            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current responsive">
               <img src="<%= post.data.image %>" alt="Evento" class="w-36">
               <div class="pl-8 my-auto">
                 <h5 class="font-bold text-lg">
@@ -197,7 +215,7 @@ title: EleccionMP
               </div>
             </a>
             <% }) %>
-              <% } %>
+          <% } %>
       </div>
       <div class="text-right">
         <a class="text-current text-sm font-semibold" href="/eventos">
@@ -214,7 +232,7 @@ title: EleccionMP
           <% collections['Podcast'].slice(0,4).forEach((podcast)=> { %>
             <div class="block mb-4">
               <iframe src="<%= podcast.data.link %>" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="" class="rifra"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
           <% }) %>
