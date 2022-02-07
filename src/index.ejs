@@ -87,7 +87,7 @@ title: EleccionMP
       <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Lo último</h4>
       <div>
         <% if (collections['Blog']) { %>
-          <% collections['Blog'].slice(0,5).forEach((post)=> { %>
+          <% collections['Blog'].slice(-5).reverse().forEach((post)=> { %>
             <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current responsive">
               <img src="<%= post.data.image %>" alt="Evento" class="w-36">
               <div class="pl-8 my-auto">
@@ -132,7 +132,7 @@ title: EleccionMP
       </div>
       <div class="border-b-2 border-yellow-500 w-full">
         <% if (collections['Video']) { %>
-          <% collections['Video'].slice(0,4).forEach((video)=> { %>
+          <% collections['Video'].slice(-4).reverse().forEach((video)=> { %>
             <a href="<%= video.url %>" class="block mb-4 text-current">
               <iframe src="<%= video.data.link %>" title="YouTube video player" class="mb-4 rifra" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -202,7 +202,7 @@ title: EleccionMP
       <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Eventos</h4>
       <div>
         <% if (collections['Evento']) { %>
-          <% collections['Evento'].slice(0,5).forEach((post)=> { %>
+          <% collections['Evento'].slice(-5).reverse().forEach((post)=> { %>
             <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current responsive">
               <img src="<%= post.data.image %>" alt="Evento" class="w-36">
               <div class="pl-8 my-auto">
@@ -229,7 +229,7 @@ title: EleccionMP
       </div>
       <div class="w-full">
         <% if (collections['Podcast']) { %>
-          <% collections['Podcast'].slice(0,4).forEach((podcast)=> { %>
+          <% collections['Podcast'].slice(-4).reverse().forEach((podcast)=> { %>
             <div class="block mb-4">
               <iframe src="<%= podcast.data.link %>" width="100%"
                 height="152" frameBorder="0" allowfullscreen="" class="rifra"
