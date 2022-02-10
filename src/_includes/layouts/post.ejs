@@ -9,8 +9,13 @@ layout: layouts/base.ejs
           <h1 class="text-center font-bold text-4xl text-gray-800">
             <%= title %>
           </h1>
+
+          <h6 class="text-center font-bold text-1xl text-gray-800">
+            <%= description %>
+          </h6>
+
           <div class="text-center text-sm mb-8">
-            <% this.dateFns.format(new Date(date), 'LLLL d, yyyy' ) %>
+            <% this.dateFns.format(new Date(post.data.date), 'dd/MM/yyyy' , { locale: this.es }) %>
           </div>
           <div class="text-center text-sm text-gray-600 mb-6">
             Categoria:
@@ -25,6 +30,13 @@ layout: layouts/base.ejs
                 <% } %>
               <% }) %>
             <% } %>
+          </div>
+
+          <div class="text-center text-sm text-gray-600 mb-6">
+            Autor:
+              <span class="text-sm font-semibold text-gray-900 uppercase ml-2">
+                <%= autor %> | <%= correo %> 
+              </span>
           </div>
         </header>
         
