@@ -34,8 +34,8 @@ layout: layouts/base.ejs
 
           <div class="text-center text-sm text-gray-600 mb-6">
             Autor:
-              <span class="text-sm font-semibold text-gray-900 uppercase ml-2">
-                
+              <span class="text-sm font-semibold text-gray-900 ml-2">
+                <%= (typeof autor != "undefined" ? autor : "") %> | <%= (typeof correo != "undefined" ? correo : "") %> 
               </span>
           </div>
         </header>
