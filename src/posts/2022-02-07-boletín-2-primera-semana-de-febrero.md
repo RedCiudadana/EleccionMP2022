@@ -4,6 +4,8 @@ image: https://wizardly-varahamihira-02e2ad.netlify.app/assets/images/posts/web_
 description: En la primera semana de febrero se dieron las primeras dos sesiones
   de la Comisión de Postulación y algunos hechos de gran relevancia para el
   proceso.
+autor: Rodrigo Boror
+correo: justicia@redciudadana.org.gt
 tags:
   - Blog
 date: 2022-02-07T14:52:24.767Z
