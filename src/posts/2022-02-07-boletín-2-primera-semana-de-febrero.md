@@ -13,6 +13,8 @@ highlight: false
 ---
 <!--StartFragment-->
 
+![](/assets/images/posts/screenshot_2.jpg)
+
 La elección del nuevo Fiscal General y Jefe del Ministerio Público ya inició. En la primera semana de febrero se dieron las primeras dos sesiones de la Comisión de Postulación y algunos hechos de gran relevancia para el proceso.
 
 En un contexto de protestas frente a la Torre de Tribunales y observancia sobre el trabajo de la Comisión de Postulación, la primera sesión de la Comisión se realizó el lunes 31 en el Palacio de Justicia de la Corte Suprema de Justicia. En esta primera sesión de más de 3 horas se determinaron algunos de los puntos más importantes para el desarrollo de la sesión. En primer lugar, se dio la elección del secretario de la Comisión, el decano Mgrt. Luis Roberto Aragón Solé de la Facultad de Ciencias Jurídicas y Justicia de la Universidad San Pablo de Guatemala. El secretario será el encargado de redactar las actas de las sesiones y será el portavoz ante medios de comunicación de la Comisión. De igual forma, se eligió como Secretaria suplente a la decana Lcda. Lorena Isabel Flores Estada. 
@@ -32,7 +34,5 @@ En conclusión, la Comisión determino que la tabla de gradación estaría divid
 <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FRedciudadanagt%2Fvideos%2F953594888862326%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
 La Comisión recién inicia sus actividades y aún queda mucho trabajo por hacer. La siguiente sesión de la Comisión está programada para el Martes 8 de febrero a las 10 de la mañana y dentro de las misma se darán los últimos lineamientos para iniciar con la recepción, evaluación y ponderación de las postulaciones. 
-
-
 
 <!--EndFragment-->
