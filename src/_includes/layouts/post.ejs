@@ -49,13 +49,23 @@ layout: layouts/base.ejs
               </span>
           </div>
         </header>
+
+        <style>
+  
+          @media (max-width: 760px){
+              .presponsive{
+                  padding-left: 0!important;
+              }
+          }
+  
+        </style>
         
         <section class="content text-justify">
           <div class="grid grid-cols-6">
             <div class="col-span-6 md:col-span-4 ">
               <%- content %>
             </div>
-            <div class="col-span-6 md:col-span-2 p-6">
+            <div class="col-span-6 md:col-span-2 presponsive" style="padding-left: 3rem;">
               <h6>Escucha nuestros podcasts</h6>
               <div class="w-full">
                 <% if (collections['Podcast']) { %>
