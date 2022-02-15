@@ -4,7 +4,7 @@ layout: layouts/base.ejs
 <!--ANUNCIO-->
 <div class="max-w-screen-lg mx-auto ">
   <div class="grid grid-cols-4">
-    <!--aca embed de anuncio-->
+    <img src="assets/images/iconos/ELECCION-MP.gif" alt="funny GIF" width="100%">
   </div>
 </div>
 <!--POST-->
@@ -13,36 +13,36 @@ layout: layouts/base.ejs
     <div class="col-span-full">
       <article>
         <header>
-          <h1 class="text-center font-bold text-4xl text-gray-800">
+          <h1 class=" font-bold text-4xl text-gray-800">
             <%= title %>
           </h1>
 
-          <h6 class="text-center font-bold text-1xl text-gray-800">
+          <h6 class=" font-bold text-1xl text-gray-800">
             <%= description %>
           </h6>
 
-          <div class="text-center text-sm mb-8">
+          <div class=" text-sm mb-8">
             <% this.dateFns.format(new Date(date), 'dd/MM/yyyy' , { locale: this.es }) %>
           </div>
-          <div class="text-center text-sm text-gray-600 mb-6">
+          <!--div class="text-center text-sm text-gray-600 mb-6">
             Categoria:
             <% if (locals.tags) { %>
               <% tags.forEach((tag)=> { %>
-                <!-- Don't show hidden tag -->
+                < Don't show hidden tag >
                 <% if (tag !=='posts' ) { %>
-                  <!-- /<%= tag.toLowerCase() %> -->
+                  < /<%= tag.toLowerCase() %> >
                   <span class="text-sm font-semibold text-gray-900 uppercase ml-2">
                     <%= tag %>
                   </span>
                 <% } %>
               <% }) %>
             <% } %>
-          </div>
+          </div-->
 
-          <div class="text-center text-sm text-gray-600 mb-6">
+          <div class=" text-sm text-gray-600 mb-6">
             Autor:
               <span class="text-sm font-semibold text-gray-900 ml-2">
-                <%= (typeof autor != "undefined" ? autor : "") %> | <%= (typeof correo != "undefined" ? correo : "") %> 
+                <%= (typeof autor != "undefined" ? autor : "") %> | <%= (typeof correo != "undefined" ? correo : "") %> | <% this.dateFns.format(new Date(date), 'dd/MM/yyyy' , { locale: this.es }) %>
               </span>
           </div>
         </header>
