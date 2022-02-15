@@ -4,7 +4,10 @@ layout: layouts/base.ejs
 <!--ANUNCIO-->
 <div class="max-w-screen-lg mx-auto ">
   <div class="grid grid-cols-4">
-    <img src="assets/images/iconos/ELECCION-MP.gif" alt="funny GIF" width="100%">
+    <div class="col-span-full mt-6">
+      <img src="/assets/images/iconos/ELECCION-MP.gif" alt="funny GIF" width="100%">
+    </div>
+    
   </div>
 </div>
 <!--POST-->
@@ -16,7 +19,7 @@ layout: layouts/base.ejs
           <h1 class=" font-bold text-4xl text-gray-800">
             <%= title %>
           </h1>
-
+          <br>
           <h6 class=" font-bold text-1xl text-gray-800">
             <%= description %>
           </h6>
@@ -42,13 +45,32 @@ layout: layouts/base.ejs
           <div class=" text-sm text-gray-600 mb-6">
             Autor:
               <span class="text-sm font-semibold text-gray-900 ml-2">
-                <%= (typeof autor != "undefined" ? autor : "") %> | <%= (typeof correo != "undefined" ? correo : "") %> | <% this.dateFns.format(new Date(date), 'dd/MM/yyyy' , { locale: this.es }) %>
+                <%= (typeof autor != "undefined" ? autor : "") %> | <%= (typeof correo != "undefined" ? correo : "") %> | <% this.dateFns.format(new Date(), 'dd/MM/yyyy' , { locale: this.es }) %>
               </span>
           </div>
         </header>
         
         <section class="content text-justify">
-          <%- content %>
+          <div class="grid grid-cols-6">
+            <div class="col-span-6 md:col-span-4 ">
+              <%- content %>
+            </div>
+            <div class="col-span-6 md:col-span-2 p-6">
+              <h6>Escucha nuestro podcasts</h6>
+              <div class="w-full">
+                <% if (collections['Podcast']) { %>
+                  <% collections['Podcast'].slice(-4).reverse().forEach((podcast)=> { %>
+                    <div class="block mb-4">
+                      <iframe src="<%= podcast.data.link %>" width="100%"
+                        height="152" frameBorder="0" allowfullscreen="" class="rifra"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                  <% }) %>
+                <% } %>
+              </div>
+            </div>  
+          </div>
+
         </section>
         
       </article>
