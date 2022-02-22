@@ -2,6 +2,9 @@
 title: "Sesión 2: Comisión de Postulación"
 image: /assets/images/posts/screenshot_2.jpg
 description: Comisión de Postulación Fiscal General y Jefe del Ministerio Público
+autor: Comisión de Postulación a Fiscal General y Jefe del Ministerio Público
+  2022-2026
+correo: justicia@redciudadana.org.gt
 tags:
   - Evento
 date: 2022-02-04T03:00:56.710Z
