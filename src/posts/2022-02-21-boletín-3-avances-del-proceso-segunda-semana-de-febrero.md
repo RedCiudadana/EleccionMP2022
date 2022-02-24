@@ -1,5 +1,5 @@
 ---
-title: "# Boletín #3 - Avances del proceso. Segunda semana de febrero"
+title: "Boletín #3 - Avances del proceso. Segunda semana de febrero"
 image: /assets/images/posts/web_mp-15.png
 description: El proceso para la elección de la o el siguiente Fiscal General
   continuó en la segunda semana de febrero con las últimas preparaciones y el
