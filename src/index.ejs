@@ -18,35 +18,44 @@ title: EleccionMP
     alt="Lupa viendo Guatemala"
     class="h-56 w-auto md:absolute right-0 top-8 ml-auto mt-4">
 </div>
-<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
-  <div class="grid grid-cols-9 gap-4 justify-center text-center py-16">
-    <div class="col-span-9 md:col-start-3 md:col-span-6 mb-8">
-      <h2 class="text-3xl font-bold">¿En qué etapa va el proceso de elección del Ministerio Público?</h2>
+<div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6 text-center py-16 pb-0">
+  <h2 class="text-3xl font-bold">¿En qué etapa se encuentra el proceso?</h2>
+  <div class="grid grid-cols-9 gap-4 justify-center text-center pb-16">
+    <div class="col-span-8 md:col-start-3 md:col-span-6 mb-8">
+      
     </div>
     <div class="col-span-9 md:col-span-3 bg-blue-300 p-6 rounded-2xl">
-      <img src="/assets/images/iconos/01.png" alt="Personas" class="mx-auto h-28 w-28">
-      <h2 class="text-3xl font-bold">Paso 1</h2>
-      <h3 class="text-lg font-bold text-white pb-4">Del 22 al 30 enero</h3>
+      <img src="/assets/images/iconos/07.png" alt="Personas" class="mx-auto h-28 w-28">
+      <h2 class="text-3xl font-bold">Paso 4</h2>
+      <h3 class="text-lg font-bold text-white pb-4">7, 8 y 10 de marzo</h3>
       <p class="text-lg font-normal">
-        Elección de Secretarios Titular y Suplente de la Comisión y aprobación de las distintas herramientas
+        Evaluación, verificación de expedientes y elaboración de listado de candidatos
       </p>
     </div>
     <div class="col-span-9 md:col-span-3 bg-gray-100 p-6 rounded-2xl">
-      <img src="/assets/images/iconos/02.png" alt="Personas" class="mx-auto h-28 w-28">
-      <h2 class="text-3xl font-bold">Paso 2</h2>
-      <h3 class="text-lg font-bold text-blue-300 pb-4">5 de febrero</h3>
+      <img src="/assets/images/iconos/CRONOGRAMA-10.png" alt="Personas" class="mx-auto h-28 w-28">
+      <h2 class="text-3xl font-bold">Paso 5</h2>
+      <h3 class="text-lg font-bold text-blue-300 pb-4">Del 11 al 15 de marzo</h3>
       <p class="text-lg font-normal">
-        Primera publicación de la convocatoria
+        Recepción de posibles impedimentos de los candidatos
       </p>
     </div>
     <div class="col-span-9 md:col-span-3 bg-gray-100 p-6 rounded-2xl">
+      <img src="/assets/images/iconos/CRONOGRAMA-12.png" alt="Personas" class="mx-auto h-28 w-28">
+      <h2 class="text-3xl font-bold">Paso 6</h2>
+      <h3 class="text-lg font-bold text-blue-300 pb-4">Del 21 al 25 de marzo </h3>
+      <p class="text-lg font-normal">
+        Aspirantes objetados pueden presentar pruebas de descargo
+      </p>
+    </div>
+    <!--div class="col-span-8 md:col-span-2 bg-gray-100 p-6 rounded-2xl">
       <img src="/assets/images/iconos/03.png" alt="Personas" class="mx-auto h-28 w-28">
-      <h2 class="text-3xl font-bold">Paso 3</h2>
-      <h3 class="text-lg font-bold text-blue-300 pb-4">Del 06 al 16 enero</h3>
+      <h2 class="text-3xl font-bold">Paso 4</h2>
+      <h3 class="text-lg font-bold text-blue-300 pb-4">22, 24 y 25 febrero </h3>
       <p class="text-lg font-normal">
-        Recepción de solicitudes y currículum. Revisión de los expedientes.
+        Revisión de expedientes
       </p>
-    </div>
+    </div-->
   </div>
 </div>
 <div class="w-full bg-gray-100">
@@ -75,11 +84,11 @@ title: EleccionMP
 <div class="max-w-screen-lg px-4 md:px-0 mx-auto mb-6">
   <div class="grid grid-cols-9 gap-4 justify-center text-left py-16">
     <div class="col-span-9 md:col-span-6">
-      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Blog</h4>
+      <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Lo último</h4>
       <div>
         <% if (collections['Blog']) { %>
-          <% collections['Blog'].slice(0,5).forEach((post)=> { %>
-            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
+          <% collections['Blog'].slice(-5).reverse().forEach((post)=> { %>
+            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current responsive">
               <img src="<%= post.data.image %>" alt="Evento" class="w-36">
               <div class="pl-8 my-auto">
                 <h5 class="font-bold text-lg">
@@ -90,8 +99,26 @@ title: EleccionMP
                 </span>
               </div>
             </a>
-            <% }) %>
-              <% } %>
+          <% }) %>
+        <% } %>
+        <style>
+  
+          @media (max-width: 480px){
+              .responsive{
+                display:block!important;
+                margin: 1.5rem 0;
+              }
+
+              .responsive img{
+                margin:1.5rem auto;
+              }
+
+              .rifra{
+                margin:1.5rem auto;
+              } 
+          }
+  
+        </style>
       </div>
       <div class="text-right">
         <a class="text-current text-sm font-semibold" href="/blog">
@@ -105,9 +132,9 @@ title: EleccionMP
       </div>
       <div class="border-b-2 border-yellow-500 w-full">
         <% if (collections['Video']) { %>
-          <% collections['Video'].slice(0,4).forEach((video)=> { %>
+          <% collections['Video'].slice(-4).reverse().forEach((video)=> { %>
             <a href="<%= video.url %>" class="block mb-4 text-current">
-              <iframe src="<%= video.data.link %>" title="YouTube video player" class="mb-4" frameborder="0"
+              <iframe src="<%= video.data.link %>" title="YouTube video player" class="mb-4 rifra" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
               <p class="text-sm mb-4"><%= video.data.description %></p>
@@ -175,8 +202,8 @@ title: EleccionMP
       <h4 class="font-bold text-4xl border-b-2 border-yellow-500 mb-4 pb-4">Eventos</h4>
       <div>
         <% if (collections['Evento']) { %>
-          <% collections['Evento'].slice(0,5).forEach((post)=> { %>
-            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
+          <% collections['Evento'].slice(-5).reverse().forEach((post)=> { %>
+            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current responsive">
               <img src="<%= post.data.image %>" alt="Evento" class="w-36">
               <div class="pl-8 my-auto">
                 <h5 class="font-bold text-lg">
@@ -188,7 +215,7 @@ title: EleccionMP
               </div>
             </a>
             <% }) %>
-              <% } %>
+          <% } %>
       </div>
       <div class="text-right">
         <a class="text-current text-sm font-semibold" href="/eventos">
@@ -202,10 +229,10 @@ title: EleccionMP
       </div>
       <div class="w-full">
         <% if (collections['Podcast']) { %>
-          <% collections['Podcast'].slice(0,4).forEach((podcast)=> { %>
+          <% collections['Podcast'].slice(-4).reverse().forEach((podcast)=> { %>
             <div class="block mb-4">
               <iframe src="<%= podcast.data.link %>" width="100%"
-                height="152" frameBorder="0" allowfullscreen=""
+                height="152" frameBorder="0" allowfullscreen="" class="rifra"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
           <% }) %>

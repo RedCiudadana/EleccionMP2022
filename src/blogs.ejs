@@ -16,7 +16,7 @@ eleventyComputed:
       <div>
         <% if (list) { %>
           <% list.forEach((post)=> { %>
-            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
+            <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current responsive">
               <img src="<%= post.data.image %>" alt="Blog" class="w-36">
               <div class="pl-8 my-auto">
                 <h5 class="font-bold text-lg">
@@ -32,6 +32,21 @@ eleventyComputed:
             </a>
           <% }) %>
         <% } %>
+
+        <style>
+  
+          @media (max-width: 480px){
+              .responsive{
+                display:block!important;
+                margin: 1.5rem 0;
+              }
+
+              .responsive img{
+                margin:1.5rem auto;
+              }
+          }
+  
+        </style>
       </div>
     </div>
     <div class="col-span-9 text-sm flex justify-end">

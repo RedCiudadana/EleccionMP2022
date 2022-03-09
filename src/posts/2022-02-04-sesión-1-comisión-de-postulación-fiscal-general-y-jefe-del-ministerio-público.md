@@ -1,7 +1,10 @@
 ---
 title: "Sesión 1: Comisión de Postulación"
-image: https://scontent.fgua1-3.fna.fbcdn.net/v/t39.30808-6/272795314_5014677295219306_468932014483045374_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=yS0ZE0S-pHgAX_mdoXk&tn=zfSNfT0jS3xOuXw4&_nc_ht=scontent.fgua1-3.fna&oh=00_AT9E8w09DbHHCoIkbMoSBcXufnGcqbOx30PYPgVGgUN2dg&oe=62008C7C
+image: /assets/images/posts/screenshot_2.jpg
 description: Comisión de Postulación Fiscal General y Jefe del Ministerio Público
+autor: Comisión de Postulación a Fiscal General y Jefe del Ministerio Público
+  2022-2026
+correo: justicia@redciudadana.org.gt
 tags:
   - Evento
 date: 2022-02-01T02:59:17.242Z
