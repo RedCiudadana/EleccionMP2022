@@ -13,30 +13,28 @@ highlight: false
 ---
 El proceso de elección de Fiscal General 2022-2026 continúa y se encuentra en una de las fases más importantes, la presentación de objeciones o impedimentos en contra de aspirantes. La convocatoria para la presentación de tachas en contra de las candidaturas terminó este martes 15 de marzo y se presentaron más de 30 objeciones. Estas objeciones cuestionan el cumplimiento de los requisitos legales para el nombramiento de Fiscal General. Las objeciones presentadas son las siguientes: 
 
-**María Consuelo Porras - 12 objecciones**
+**María Consuelo Porras - 12 objeciones**
 Falta de idoneidad y honorabilidad. Debilitamiento de FECI, baja especialización de las fiscalías, consecuencias con EEUU, persecución a fiscales, plagio de tesis doctoral, vulneración de derechos de miembros del MP e inclusión en lista Engel de agentes antidemocráticos
 
-**Jorge Luis Donado - 4 objecciones**
+**Jorge Luis Donado - 4 objeciones**
 Falta de idoneidad y honorabilidad. Incumplimiento de deberes en PGN y conducta inapropiada ante la CIDH
 
-**Henry Alejandro Elías - 3 objecciones**
+**Henry Alejandro Elías - 3 objeciones**
 Participación y señalamientos en el caso Comisiones Paralelas y mal aplicación de ley de feminicidio
 
-**José Enrique Urrutia - 3 objecciones**
+**José Enrique Urrutia - 3 objeciones**
 Incumplimiento de méritos académicos, acciones legales contra FECI, vinculación con Fundación contra el Terrorismo y acusaciones de hostigar defensores de DDHH y periodistas
 
-**Óscar Dávila  - 2 objecciones**
+**Óscar Dávila  - 2 objeciones**
 Falta de requisito de 10 años de ejercicio profesional como abogado
 
-**Eliseo Rigoberto Quiñonez - 2 objecciones**
+**Eliseo Rigoberto Quiñonez - 2 objeciones**
 Falta de idoneidad y honorabilidad. Abuso de autoridad en el cargo de fiscal y alteración de hechos
 
-**Néctor de León Ramírez - 1 objecciones**
+**Néctor de León Ramírez - 1 objeciones**
 No indica razones fácticas
 
-**Gabriel García Luna  - 1 objecciones**
+**Gabriel García Luna  - 1 objeciones**
 Incumplimiento de 5 años como Magistrado de Corte de Apelaciones. Gozó de licencias para integrar la Junta de Disciplina Judicial
-
-
 
 Ahora la Comisión deberá de conocer los impedimentos planteados para que los y las aspirantes presenten sus pruebas de descargo en contra de los señalamientos presentados. Las últimas semanas de marzo serán claves para los y las aspirantes ya que tienen del 21 al 25 de marzo para presentar pruebas de descargo y el miércoles 30 de marzo serán conocidas por la Comisión.
