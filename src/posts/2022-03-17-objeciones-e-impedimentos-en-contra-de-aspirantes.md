@@ -8,22 +8,24 @@ autor: Rodrigo Boror
 correo: justicia@redciudadana.org.gt
 tags:
   - Blog
-date: 2022-03-17T20:04:55.358Z
+date: 2022-03-18T23:04:00.000Z
 highlight: false
 ---
-El proceso de elección de Fiscal General 2022-2026 continúa y se encuentra en una de las fases más importantes, la presentación de objeciones o impedimentos en contra de aspirantes. La convocatoria para la presentación de tachas en contra de las candidaturas terminó este martes 15 de marzo y se presentaron más de 30 objeciones. Estas objeciones cuestionan el cumplimiento de los requisitos legales para el nombramiento de Fiscal General. Las objeciones presentadas son las siguientes: 
+El proceso de elección de Fiscal General 2022-2026 continúa y se encuentra en una de las fases más importantes, la presentación de objeciones o impedimentos en contra de aspirantes. La convocatoria para la presentación de tachas en contra de las candidaturas terminó este martes 15 de marzo y se presentaron 33 objeciones. 
 
-**María Consuelo Porras - 12 objeciones**
-Falta de idoneidad y honorabilidad. Debilitamiento de FECI, baja especialización de las fiscalías, consecuencias con EEUU, persecución a fiscales, plagio de tesis doctoral, vulneración de derechos de miembros del MP e inclusión en lista Engel de agentes antidemocráticos
+Estas objeciones cuestionan el cumplimiento de los requisitos legales para el nombramiento de Fiscal General. Las objeciones presentadas son las siguientes conforme a los expedientes presentados durante el período asignado para presentar objeciones (11-15 de marzo) y que fueron cargadas al portal institucional del Organismo Judicial:
+
+**María Consuelo Porras - 15 objeciones**
+Falta de idoneidad y honorabilidad. Debilitamiento de FECI, baja especialización de las fiscalías, consecuencias con EEUU, persecución a fiscales, plagio de tesis doctoral, vulneración de derechos de miembros del MP e inclusión en lista Engel de agentes antidemocráticos.
+
+**José Enrique Urrutia - 5 objeciones**
+Incumplimiento de méritos académicos, acciones legales contra FECI, vinculación con Fundación contra el Terrorismo y acusaciones de hostigar defensores de DDHH y periodistas
 
 **Jorge Luis Donado - 4 objeciones**
 Falta de idoneidad y honorabilidad. Incumplimiento de deberes en PGN y conducta inapropiada ante la CIDH
 
 **Henry Alejandro Elías - 3 objeciones**
 Participación y señalamientos en el caso Comisiones Paralelas y mal aplicación de ley de feminicidio
-
-**José Enrique Urrutia - 3 objeciones**
-Incumplimiento de méritos académicos, acciones legales contra FECI, vinculación con Fundación contra el Terrorismo y acusaciones de hostigar defensores de DDHH y periodistas
 
 **Óscar Dávila  - 2 objeciones**
 Falta de requisito de 10 años de ejercicio profesional como abogado
