@@ -14,7 +14,7 @@ highlight: false
 ---
 ![](/assets/images/posts/sesiones-in_01-1-.png)
 
-Para participar en las sesiones informativas de seguimiento al proceso de: Elección MP, es indispensable que llenar el siguiente formulario. Posteriormente te estaremos contactando y estaremos brindando toda la información sobre el mismo.
+Para participar en las sesiones informativas de seguimiento al proceso de: Elección MP, es indispensable que llenar el siguiente formulario. Posteriormente te estaremos contactando y estaremos brindando toda la información sobre el mismo. **[Mas Información: Brief](https://redciudadana.github.io/EleccionMP-Recursos-y-Fotos/Brief/BriefEleccionMP.pdf)**
 
 Queremos que la información de esta sesión llegue a muchas personas, es por eso hemos desarrollado 6 sesiones iguales, ¿en qué sesión deseas participar?
 
