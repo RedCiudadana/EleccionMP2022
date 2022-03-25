@@ -20,4 +20,4 @@ Queremos que la información de esta sesión llegue a muchas personas, es por es
 
 **Formulario de registro:**
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMacWQvxgzjbjCw7KJG5v4Z0fdgVsVpW1Oa4Fk826oNZPlqA/viewform?embedded=true" width="700" height="1020" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMacWQvxgzjbjCw7KJG5v4Z0fdgVsVpW1Oa4Fk826oNZPlqA/viewform?embedded=true" width="700" height="1820" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
