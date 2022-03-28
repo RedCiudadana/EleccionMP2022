@@ -12,8 +12,6 @@ tags:
 date: 2022-03-21T15:24:48.103Z
 highlight: false
 ---
-**Formulario de registro:**
-
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMacWQvxgzjbjCw7KJG5v4Z0fdgVsVpW1Oa4Fk826oNZPlqA/viewform?embedded=true" width="700" height="2820" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 
 ![](/assets/images/posts/sesiones-in_01-1-.png)
