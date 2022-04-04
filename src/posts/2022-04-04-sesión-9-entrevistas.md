@@ -1,5 +1,5 @@
 ---
-title: "Sesión 9: Entrevistas"
+title: "Sesión 8: Entrevistas"
 image: /assets/images/posts/web_mp-15.png
 description: Comisión de Postulación Fiscal General y Jefe del Ministerio Público
 autor: Comisión de Postulación a Fiscal General y Jefe del Ministerio Público
