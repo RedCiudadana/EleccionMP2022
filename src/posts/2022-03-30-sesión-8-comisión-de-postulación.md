@@ -1,5 +1,5 @@
 ---
-title: "Sesión 8: Comisión de Postulación"
+title: "Sesión 7: Comisión de Postulación"
 image: /assets/images/posts/web_mp-16.png
 description: Comisión de Postulación Fiscal General y Jefe del Ministerio Público
 autor: Comisión de Postulación a Fiscal General y Jefe del Ministerio Público
