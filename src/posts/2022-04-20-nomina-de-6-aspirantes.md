@@ -11,8 +11,6 @@ tags:
 date: 2022-04-20T22:24:02.129Z
 highlight: false
 ---
-<!--StartFragment-->\
-
 La Comisión de Postulación realizó la nómina de 6 aspirantes que serán enviados al Presidente Giammattei para elegir a la/el próximo Fiscal General 2022-2026. Estos son los/las aspirantes y sus expedientes:
 
 1. Henry Elías Wilson
@@ -23,5 +21,3 @@ La Comisión de Postulación realizó la nómina de 6 aspirantes que serán envi
 6. Consuelo Porras
 
 ![](/assets/images/posts/nomina-de-6-04-1-.png)
-
-<!--EndFragment-->
