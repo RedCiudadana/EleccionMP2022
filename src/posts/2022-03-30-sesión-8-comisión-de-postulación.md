@@ -1,7 +1,8 @@
 ---
 title: "Sesión 7: Comisión de Postulación"
 image: /assets/images/posts/web_mp-16.png
-description: Comisión de Postulación Fiscal General y Jefe del Ministerio Público
+description: "La séptima sesión fue realizada para la presentación de pruebas de
+  descargo en contra de los y las aspirantes señalados durante el proceso. "
 autor: Comisión de Postulación a Fiscal General y Jefe del Ministerio Público
   2022-2026
 correo: justicia@redciudadana.org.gt

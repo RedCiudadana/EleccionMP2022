@@ -1,7 +1,11 @@
 ---
 title: "Sesión 8: Entrevistas"
 image: /assets/images/posts/web_mp-15.png
-description: Comisión de Postulación Fiscal General y Jefe del Ministerio Público
+description: La octava sesión se realizó en 3 días seguidos, del 4 al 6 de
+  abril, y se realizaron las entrevistas públicas a los y las aspirantes. Cada
+  día se entrevistaron a 5 aspirantes en término de 1 hora, en la cual se
+  conocía el plan de trabajo por 15 minutos y 45 minutos eran reservados para
+  preguntas de los y las Comisionadas
 autor: Comisión de Postulación a Fiscal General y Jefe del Ministerio Público
   2022-2026
 correo: justicia@redciudadana.org.gt

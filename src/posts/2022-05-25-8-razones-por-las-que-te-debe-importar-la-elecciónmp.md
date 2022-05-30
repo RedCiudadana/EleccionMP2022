@@ -1,0 +1,30 @@
+---
+title: "8 razones por las que te debe importar la #ElecciónMP"
+image: /assets/images/posts/web_mp-16.png
+description: El Ministerio Público tiene un papel de gran importancia para la
+  administración de justicia y la convivencia pacífica. De esta forma,
+  presentamos 8 razones por las cuáles nos debe interesar la elección del Fiscal
+  General como ciudadanos y ciudadanas de Guatemala.
+autor: Rodrigo Boror
+correo: justicia@redciudadana.org.gt
+tags:
+  - Blog
+date: 2022-05-25T15:29:28.059Z
+highlight: false
+---
+<!--StartFragment-->
+
+El proceso de elección de Fiscal General 2022-2026 ha sido uno de los mayor documentados e incidencia ciudadana con la cobertura, monitoreo y fiscalización. Este proceso despierta el interés de varios sectores debido a la importancia que tiene la Fiscalía Generala. De inicio, los y las abogadas, funcionarios públicos y operadores de justicia poseen un interés natural por ser parte y usuarios del sistema del Ministerio Público. De igual forma, organizaciones nacionales, internacionales dedicadas a justicia penal y agencias de cooperación tienen un interés con el fin de mejorar el sistema de persecución e investigación penal. 
+
+Sin embargo, el mayor interés es por parte de la población en general como miembros de una sociedad. Aunque parezca distante, el Ministerio Público tiene un papel de gran importancia para la administración de justicia y la convivencia pacífica. De esta forma, presentamos 8 razones por las cuáles nos debe interesar la elección del Fiscal General como ciudadanos y ciudadanas de Guatemala.
+
+1. Somos usuarios del sistema de justicia penal que ante cualquier situación debemos de tener una institución capaz de dar respuesta a nuestras denuncias. Ante ello, la atención en las oficinas de atención permanente y de atención a la víctima son las principales dependencias con las que nos relacionamos. Además, la atención por los y las fiscales en el seguimiento de los casos y denuncias es importante para cumplir con la apariencia de un sistema de justicia eficaz. 
+2. Es de vital importancia la investigación, persecución y sanción de delitos contra la vida ante el alza de homicidios en el último año. Ante esta situación, el Ministerio Público debe articular esfuerzos para cumplir con la reacción ante el delito y evitar la impunidad ante estos hechos. De igual forma, colaborar con la política de seguridad a efecto de ayudar a la implementación de prevención del delito;
+3. La lucha contra la corrupción tiene su origen en las investigaciones de calidad y persecución estratégica de los y las fiscales. El Ministerio Público necesita personas independientes en su cargo y con las suficientes herramientas para abordar estos delitos. Por lo que cada elección presenta la reflexión sobre el actual estado de los fiscales y cuáles son las mejores propuesta para continuar, mejorar o cambiar el sistema de carrera fiscal, capacitación de los fiscales  y dotación de medios de investigación; 
+4. El Ministerio Público tiene relevancia por ser el único capaz de perseguir los delitos que atentan contra la propiedad, vida, integridad y justicia. De esta forma, es de gran importancia un Fiscal General capaz de resolver los conflictos derivados de la comisión de delitos ya que es la única entidad que puede perseguirlos e investigarlos. El famoso “monopolio de la persecución penal” conlleva también evaluar constantemente si la persona frente a la institución sí cumple con los requerimiento legales y sociales para buscar la reparación y sanción por la lesión de los valores sociales; 
+5. La investigación con enfoque de género debe de ser mejorada cada vez más y se debe de atender con mayor y mejor cobertura las desapariciones de mujeres y niñas. De esta cuenta, la atención a delitos contra la mujer debe de mejorarse constantemente con la inclusión de estándares para recepción de denuncias, atención, seguimiento psicológico y reparación de los daños y lesiones causadas. De igual forma, la atención a mujeres no sólo puede generarse de una institución, sino que varias instituciones y dependencias estatales deben coadyuvar a la persecución penal con enfoque de género.
+6. El Ministerio Público ayuda en la administración de justicia para buscar justicia ante delitos cometidos contra personas LGBTI+. En este caso, la atención a las propuestas de la elección debe de ser central. El grupo LGBTI+ se caracteriza por constantes agresiones y lesiones a su integridad, vida, sexualidad, honor, entre otros, y los protocolos de atención, investigación y persecución no son tan desarrollados. De tal cuenta, este grupo en situación de vulnerabilidad demanda mayor atención para ser incluidos dentro de la política de persecución penal y garantizar acceso a la justicia ante la violación de sus DDHH.
+7. Las investigaciones y la persecución por los delitos cometidos durante el conflicto armado interno y su impunidad sólo pueden ser contrarrestada con una Fiscalía General dispuesta a continuar los casos y presentarlos ante los Tribunales. Estos delitos, debido a su trascendencia, deben de ser dirigidos de forma técnica e integral. De tal cuenta, la renovación del Fiscal General propone la reflexión sobre los logros y metas en la acusación y condena de autores de delitos cometidos durante el conflicto armado interno.
+8. Ante los delitos de trata, explotación de menores y violencia sexual de mujeres, niños, niñas y adolescentes, el Ministerio Público es un pilar importante para la investigación de grupos transnacionales y su captura. Esta situación se debe al aumento de bandas trasnacionales que operan en diferentes países y regiones, además de las bandas a nivel nacional, y que presentan un peligro para el desarrollo de mujeres y NNA. La preocupación por los secuestros con el fin de explotar sexualmente a una persona sólo puede ser contrarrestada con la desarticulación de estas bandas a través de investigación y persecuciones penales efectivas. 
+
+<!--EndFragment-->

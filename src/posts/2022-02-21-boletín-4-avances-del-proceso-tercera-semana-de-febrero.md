@@ -1,9 +1,13 @@
 ---
 title: "Boletín #4. Avances del proceso. Tercera semana de febrero. "
 image: /assets/images/posts/web_mp-15.png
-description: La tercera semana en este proceso ha sido de baja actividad por
-  parte de la Comisión. Dentro de esta no se han dado sesiones de la Comisión y
-  no ha habido actividad significativa por los Comisionados y Comisionadas
+description: Esta sesión se llevó a cabo en dos días ya que se revisaron los
+  expedientes enviados por los y las aspirantes a la Comisión. Posterior a ello
+  se publicaron los nombres de los y las aspirantes que no cumplían con los
+  requisitos de la convocatoria  De igual forma la Comisión determinó el punteo
+  mínimo, o línea de corte, que deberán obtener los expedientes en la tabla de
+  gradación para ser incluidos en la nómina de 6 aspirantes que se enviará al
+  Presidente de la República.
 autor: Rodrigo Boror
 correo: justicia@redciudadana.org.gt
 tags:

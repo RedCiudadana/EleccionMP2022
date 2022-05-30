@@ -1,7 +1,9 @@
 ---
 title: "Sesión 10: Elaboración de nómina "
 image: /assets/images/posts/web_mp-16.png
-description: Elaboración de nómina con los 6 aspirantes
+description: La décima sesión de la Comisión realizó la votación final para la
+  integración de los y las 6 aspirantes que serán enviados al Presidente de la
+  República y cuándo será enviada para la designación final
 autor: Comisión de Postulación Fiscal General y Jefe del Ministerio Público
 correo: justicia@redciudadana.org.gt
 tags:
