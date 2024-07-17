@@ -72,6 +72,9 @@
 
       gtag('config', '<%= site.google_analytics_id %>');
     </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
 
   <style>
@@ -113,16 +116,16 @@
             Eventos
           </a>
           <a href="https://www.facebook.com/Redciudadanagt/" target="_blank" class="mr-4 text-gray-500">
-            <i class="fab fa-facebook-f"></i>
+            <i class="fa-brands fa-facebook"></i>
           </a>
           <a href="https://www.youtube.com/channel/UCQwc62j7beStZYFzwPxBEQg" target="_blank" class="mr-4 text-gray-500">
-            <i class="fab fa-youtube"></i>
+            <i class="fa-brands fa-youtube"></i>
           </a>
           <a href="https://www.instagram.com/redxguate/" target="_blank" class="mr-4 text-gray-500">
-            <i class="fab fa-instagram"></i>
+            <i class="fa-brands fa-instagram"></i>
           </a>
           <a href="https://twitter.com/RedxGuate" target="_blank" class="text-gray-500">
-            <i class="fab fa-twitter"></i>
+            <i class="fa-brands fa-x-twitter"></i>
           </a>
         </nav>
       </div>
@@ -134,63 +137,47 @@
         <%- content %>
       </div>
     </main>
-    <div class="bg-footer text-white">
-      <div class="max-w-screen-lg px-4 md:px-0 mx-auto py-12">
-        <div class="grid grid-cols-9">
-          <div class="col-span-9 md:col-span-3 mb-4 md:mb-0">
-            <p class="font-bold mb-4">¿Te gusta lo que hacemos?</p>
-            <ul>
-              <li class="mb-2">
-                <i class="fas fa-heart"></i>
-                <a style="color:#fff" target="_blank" href="http://donacion.redciudadana.org/"><span>Donaciones</span></a>
-              </li>
-              <li class="mb-2">
-                <i class="fas fa-users"></i>
-                <a style="color:#fff" target="_blank" href="http://voluntarios.redciudadana.org/"><span>Voluntariado</span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-span-9 md:col-span-3 mb-4 md:mb-0">
-            <p class="font-bold mb-4">Siguenos en:</p>
-            <div class="flex">
-              <a href="https://www.facebook.com/Redciudadanagt/" target="_blank" class="mr-2">
-                <img src="/mi-guatemala/images/icon-fb-white.png" alt="Facebook">
-              </a>
-              <a href="https://twitter.com/RedxGuate" target="_blank" class="mr-2">
-                <img src="/mi-guatemala/images/icon-tw-white.png" alt="Twitter">
-              </a>
-              <a href="https://www.instagram.com/redxguate/" target="_blank">
-                <img src="/mi-guatemala/images/icon-in-white.png" alt="Instagram">
-              </a>
+    
+    <!-- footer-area-start -->
+    <footer>
+      <div class="footer-middle-area pt-80 pb-25" style="background-color:  rgba(141,190,218);">
+        <div class="container">
+            <div class="row" style="justify-content:space-between">
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                    <div class="footer-wrapper mb-30">
+                        <div class="footer-logo">
+                            <a target="_blank" href="https://redciudadana.org/"><img src="/assets/images/LOGO-RED_BLANCO.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-9">
+                    <div class="d-flex align-items-center justify-content-end-custom">
+                      <a target="_blank" style="margin:0 3px" href="https://www.instagram.com/redxguate/"><img src="/assets/images/JUSTICIAPEDIA_02-11.png"></a>
+                      <a target="_blank" style="margin:0 3px" href="https://twitter.com/redxguate"><img src="/assets/images/JUSTICIAPEDIA_02-13.png"></a>
+                      <a target="_blank" style="margin:0 3px" href="https://www.tiktok.com/@redxguate"><img  src="/assets/images/JUSTICIAPEDIA_02-12.png"></a>
+                      <a target="_blank" style="margin:0 3px" href="https://www.facebook.com/Redciudadanagt"><img src="/assets/images/JUSTICIAPEDIA_02-14.png"></a>
+                        <!--a target="_blank" style="margin:0 3px" href="https://www.youtube.com/channel/UCQwc62j7beStZYFzwPxBEQg"><img  src="/elementos/REDES-30.png"></a-->
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-span-9 md:col-start-8 md:col-end-10 mb-4 md:mb-0">
-            <p class="font-bold mb-4">Contáctanos:</p>
-            <p class="mb-2">
-              <i class="fas fa-envelope"></i>
-              <a style="color:#fff" target="_blank" href="mailto:info@redciudadana.org.gt"><span>info@redciudadana.org.gt</span></a>
-            </p>
-            <p class="mb-2">
-              <i class="fas fa-map-marker-alt"></i>
-              <a style="color:#fff" target="_blank" href="https://goo.gl/maps/PWTeqy6qRpNQ8foC7"><span>Guatemala, Guatemala</span></a>
-            </p>
-          </div>
+            <div class="row mt-40 mb-40">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div style="height: 2px;border-bottom: 1px solid #fff;"></div>
+                </div>
+            </div>
+            <div class="footer-bottom-area pt-25 mt-45" style="border-top:none">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="copyright text-center">
+                            <a href="https://redciudadana.org/"><p style="color:#fff!important"><!--i class="far fa-copyright"></i> 2020 <a href="#">Fundee.</a--> Asociación Civil Red Ciudadana</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="bg-white">
-      <div class="max-w-screen-lg px-4 py-2 md:px-0 mx-auto">
-        <div class="grid grid-cols-6">
-          <div class="col-span-9 md:col-span-4 text-left flex mb-4">
-            <a href="https://redciudadana.org/"><img src="/mi-guatemala/images/logo-rc-color.png" alt="Red Ciudadana"></a>
-            <p class="my-auto font-semibold"><a href="https://redciudadana.org/">Desarrollado por Asociación Civil Red Ciudadana</a></p>
-          </div>
-          <div class="col-span-9 md:col-span-2 justify-center md:justify-end flex">
-            <img src="/mi-guatemala/images/icon-cc-by.png" alt="CC-BY" class="w-18 my-auto mr-4">
-            <img src="/mi-guatemala/images/icon-cc-cc.png" alt="CC-CC" class="w-18 my-auto mr-4">
-            <img src="/mi-guatemala/images/icon-cc-sa.png" alt="CC-SA" class="w-18 my-auto">
-          </div>
-      </div>
-    </div>
+  </footer>
+  <!-- footer-area-end -->
+    
   </body>
 </html>
