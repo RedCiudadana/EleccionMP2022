@@ -95,7 +95,7 @@ layout: layouts/base.ejs
                 <% if (locals.page.url !== post.url) { %>
                   <li class="mb-3 block justify-between">
                     <a href="<%= post.url %>" class="flex border-b-2 pb-4 mb-4 text-current">
-                      <img src="<%= post.data.image %>" alt="Evento" class="w-36">
+                      <img src="<%= post.data.image %>" alt="Evento" class="w-36" style="height: 130px;">
                       <div class="pl-8 my-auto">
                         <h5 class="font-bold text-lg">
                           <%= post.data.title %>
