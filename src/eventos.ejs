@@ -56,7 +56,7 @@ eleventyComputed:
 
       </div>
     </div>
-    <div class="col-span-9 text-sm flex justify-end">
+    <div class="col-span-9 text-sm flex justify-end mx-2" style="align-items: center;">
       <% if (pagination.previous) { %>
       <div>
         <a class="text-white bg-yellow-500 font-bold p-2 text-center hover:bg-yellow-600 hover:no-underline"
@@ -66,7 +66,7 @@ eleventyComputed:
       </div>
       <% } %>
       <% if (pagination.next) { %>
-        <div class="text-right mt-2">
+        <div class="text-right mt-2 mx-2" style="align-items: center;">
           <a class="text-white bg-yellow-500 font-bold p-2 text-center hover:bg-yellow-600 hover:no-underline"
             href="<%= pagination.next.replace(/index.html$/, "") %>">
             Eventos anteriores →
